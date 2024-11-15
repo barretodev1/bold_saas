@@ -8,10 +8,10 @@ export default function HeaderComponent() {
         </div>
 
         <ul className="flex flex-row gap-3 hidden md:flex flex-row items-center mr-2 font-semibold">
-            <li><a className="text-black font-semibold hover:text-violet-600 transition-all" href="">Home</a></li>
-            <li><a className="text-black font-semibold hover:text-violet-600 transition-all" href="">Sobre</a></li>
-            <li><a className="text-black font-semibold hover:text-violet-600 transition-all" href="">Contato</a></li>
-            <li className="flex justify-center cursor-pointer rounded-full bg-violet-600 p-2 w-36 hover:bg-violet-500 transition-all"><a className="font-normal text-white" href="">Lucrar!</a></li>
+            <li><a className="text-black font-semibold hover:text-violet-600 transition-all" href="#home">Home</a></li>
+            <li><a className="text-black font-semibold hover:text-violet-600 transition-all" href="#sobre">Sobre</a></li>
+            <li><a className="text-black font-semibold hover:text-violet-600 transition-all" href="#contato">Contato</a></li>
+            <a className="flex justify-center cursor-pointer rounded-full bg-violet-600 p-2 w-36 font-normal text-white hover:bg-violet-500 transition-all" href="https://wa.me/11933255476">Lucrar!</a>
         </ul>
     </header>
     );

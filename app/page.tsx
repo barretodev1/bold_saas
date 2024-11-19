@@ -6,40 +6,14 @@ import Image from "next/image";
 import { Button } from "./_components/ui/button";
 import ComponentContact from "./_components/contact";
 import ComponentService from "./_components/card-service-item";
+import SmoothScrollLinks from "../app/_components/scroll"
 
 export default function Home() {
-  useEffect(() => {
-    // Função que lida com o clique nos links de ancoragem
-    const handleScroll = (event) => {
-      event.preventDefault(); // Previne o comportamento de rolagem padrão
-
-      const targetId = event.currentTarget.getAttribute("href").substring(1); // Obtém o ID do destino
-      const targetElement = document.getElementById(targetId); // Encontra o elemento com o ID
-
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop, // A posição do topo do elemento
-          behavior: 'smooth', // Define a rolagem suave
-        });
-      }
-    };
-
-    // Seleciona todos os links com href que começam com #
-    const anchorLinks = document.querySelectorAll('a[href^="#"]');
-    anchorLinks.forEach((link) => {
-      link.addEventListener('click', handleScroll);
-    });
-
-    // Limpeza do evento
-    return () => {
-      anchorLinks.forEach((link) => {
-        link.removeEventListener('click', handleScroll);
-      });
-    };
-  }, []);
-
+ 
   return (
     <div>
+
+      <SmoothScrollLinks/>
       {/* HEADER COMPONENT */}
       <HeaderComponent />
 

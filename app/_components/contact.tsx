@@ -23,20 +23,6 @@ const ComponentContact = () => {
                 <p className="mt-2 text-violet-500 dark:text-violet-400">boldcompany@gmail.com</p>
             </div>
 
-            <div>
-                <span className="inline-block p-3 text-violet-500 rounded-full bg-violet-100/80 dark:bg-gray-800">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" className="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                    </svg>
-                </span>
-
-                <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">Empresa</h2>
-                <p className="mt-2">Venha-nos visitar...</p>
-                <p className="mt-2 text-violet-500 dark:text-violet-400">Rua Salvador Fernandes Cardia</p>
-            </div>
 
             <div>
                 <span className="inline-block p-3 text-violet-500 rounded-full bg-violet-100/80 dark:bg-gray-800">

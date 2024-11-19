@@ -5,6 +5,7 @@ import HeaderComponent from "@/app/_components/header";
 import Image from "next/image";
 import { Button } from "./_components/ui/button";
 import ComponentContact from "./_components/contact";
+import ComponentService from "./_components/card-service-item";
 
 export default function Home() {
   useEffect(() => {
@@ -92,8 +93,19 @@ export default function Home() {
         </div>
       </div>
 
-      {/* COMPONENT CONTACT US */}
-      <div className="flex flex-col items-center justify-center p-5 pt-16" id="contato">
+      {/* COMPONENT LUCRAR */}
+      <div className="p-8" id="lucrar">
+        <div className="flex items-center justify-center">
+          <Image src='/lucrar.png' alt="venha lucrar" height={330} width={330}/>
+        </div>
+
+        <div className="flex items-center justify-center mt-12">
+          <ComponentService/>
+        </div>
+      </div>
+
+       {/* COMPONENT CONTACT US */}
+       <div className="flex flex-col items-center justify-center p-5 pt-16" id="contato">
         <div>
           <Image src='/contact_us.png' alt="contato" height={350} width={350}/>
         </div>
@@ -102,16 +114,6 @@ export default function Home() {
           <ComponentContact/>
         </div>
       </div>
-
-      {/* COMPONENT LUCRAR */}
-      <div className="p-5" id="lucrar">
-        <div className="flex items-center justify-center">
-          <Image src='/lucrar.png' alt="venha lucrar" height={330} width={330}/>
-        </div>
-
-        
-      </div>
-
 
     </div>
   );

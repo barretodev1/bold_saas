@@ -36,7 +36,7 @@ const ComponentService = () => {
       <Card className="relative w-96 h-[72vh] md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-5 flex justify-center">
-            <img src="/trafego.png" alt="trafego pago" className="h-56" />
+            <Image src="/trafego.png" alt="trafego pago" className="h-56" width={250} height={400}/>
           </div>
 
           <div className="flex flex-col">
@@ -55,7 +55,7 @@ const ComponentService = () => {
       <Card className="relative w-96 h-[72vh] md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-5 flex justify-center">
-            <img src="/design.png" alt="website" className="h-56" />
+            <Image src="/design.png" alt="website" className="h-56" width={250} height={400}/>
           </div>
 
           <div className="flex flex-col">
@@ -99,7 +99,7 @@ const ComponentService = () => {
       <Card className="relative w-96 h-[72vh] md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-1 flex justify-center mt-4">
-            <img src="/consult.png" alt="trafego pago" className="h-56" />
+            <Image src="/consult.png" alt="trafego pago" className="h-56" width={260} height={300} />
           </div>
 
           <div className="flex flex-col">
@@ -117,7 +117,7 @@ const ComponentService = () => {
       <Card className="relative w-96 h-[72vh] md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-5 flex justify-center h-56">
-            <img src="/copy.png" alt="website" className="h-60" />
+            <Image src="/copy.png" alt="website" width={300} height={400}/>
           </div>
 
           <div className="flex flex-col">

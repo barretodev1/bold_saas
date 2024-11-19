@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import HeaderComponent from "@/app/_components/header";
 import Image from "next/image";
 import { Button } from "./_components/ui/button";

@@ -59,7 +59,7 @@ const ComponentService = () => {
           </div>
 
           <div className="flex flex-col">
-            <h1 className="text-xl font-bold">
+            <h1 className="truncate text-xl font-bold">
               Identidade Visual e Design
             </h1>
             <p className="text-sm font-normal text-zinc-600 mt-1">
@@ -110,7 +110,18 @@ const ComponentService = () => {
             Orientação especializada para otimizar campanhas, fortalecer sua marca e alcançar melhores resultados. </p>
           </div>
 
-          <Button className="w-44 bottom-0 mb-4 absolute bg-violet-600">Quero lucrar!</Button>
+          <div className="flex flex-row gap-44">
+            <div>
+              <Button className="w-44 bottom-0 mb-4 absolute bg-violet-600">Quero lucrar!</Button>
+            </div>
+            <div className="">
+              <a href="https://form.jotform.com/243236228275659">
+                <Button className="w-24 bottom-0 mb-4 absolute right-0 mr-3">Grátis!</Button>
+              </a>
+            </div>
+         
+          </div>
+         
         </CardContent>
       </Card>
 
@@ -121,7 +132,7 @@ const ComponentService = () => {
           </div>
 
           <div className="flex flex-col">
-            <h1 className="text-xl font-bold">
+            <h1 className="truncate text-xl font-bold">
               Técnicas de Copywriting!
             </h1>
             <p className="text-sm font-normal text-zinc-600 mt-1">

@@ -6,6 +6,7 @@ import { Button } from "./_components/ui/button";
 import ComponentContact from "./_components/contact";
 import ComponentService from "./_components/card-service-item";
 import SmoothScrollLinks from "../app/_components/scroll"
+import ComponentFooter from "./_components/footer";
 
 export default function Home() {
  
@@ -67,7 +68,7 @@ export default function Home() {
       </div>
 
       {/* COMPONENT LUCRAR */}
-      <div className="p-8" id="lucrar">
+      <div className="p-8 mt-16" id="lucrar">
         <div className="flex items-center justify-center">
           <Image src='/lucrar.png' alt="venha lucrar" height={330} width={330}/>
         </div>
@@ -80,14 +81,19 @@ export default function Home() {
        {/* COMPONENT CONTACT US */}
        <div className="flex flex-col items-center justify-center p-5 pt-16" id="contato">
         <div>
-          <Image src='/contact_us.png' alt="contato" height={350} width={350}/>
+          <Image src='/contato.png' alt="contato" height={300} width={300}/>
         </div>
 
-        <div>
+        <div className="flex items-center justify-center mt-12">
           <ComponentContact/>
         </div>
       </div>
 
+      {/* COMPONENT FOOTER */}
+      <div className="mt-20 w-full">
+        <ComponentFooter/>
+      </div>
+
     </div>
-  );
+  );''
 }

@@ -5,9 +5,9 @@ import { Button } from "./ui/button";
 
 const ComponentService = () => {
   return (
-    <div className="flex justify-center items-center grid grid-cols-1 gap-6 md:grid-cols-3 flex justify-center items-center">
+    <div className="flex justify-center items-center grid grid-cols-1 gap-7 md:grid-cols-3 flex justify-center items-center">
     
-      <Card className="relative w-96 h-[72vh] md:h-[70vh]">
+      <Card className="relative h-[58vh] md:h-[70vh]">
         <CardContent>
           <div className="mb-5 h-56 items-center justify-center">
             <Image
@@ -33,7 +33,7 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card className="relative w-96 h-[72vh] md:h-[70vh]">
+      <Card className="relative h-[58vh] md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-5 flex justify-center">
             <Image src="/trafego.png" alt="trafego pago" className="h-56" width={250} height={400}/>
@@ -52,10 +52,10 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card className="relative w-96 h-[72vh] md:h-[70vh]">
+      <Card className="relative h-[58vh] md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-5 flex justify-center">
-            <Image src="/design.png" alt="website" className="h-56" width={250} height={400}/>
+            <Image src="/design.png" alt="website" className="h-56" width={200} height={400}/>
           </div>
 
           <div className="flex flex-col">
@@ -71,7 +71,7 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card className="relative w-96 h-[72vh] md:h-[70vh]">
+      <Card className="relative h-[58vh] md:h-[70vh]">
         <CardContent>
           <div className="mb-5 h-56 items-center justify-center">
             <Image
@@ -96,10 +96,10 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card className="relative w-96 h-[72vh] md:h-[70vh]">
+      <Card className="relative h-[58vh] md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-1 flex justify-center mt-4">
-            <Image src="/consult.png" alt="trafego pago" className="h-56" width={260} height={300} />
+            <Image src="/consult.png" alt="trafego pago" className="h-56" width={230} height={300} />
           </div>
 
           <div className="flex flex-col">
@@ -114,10 +114,10 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card className="relative w-96 h-[72vh] md:h-[70vh]">
+      <Card className="relative h-[58vh] md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-5 flex justify-center h-56">
-            <Image src="/copy.png" alt="website" width={300} height={400}/>
+            <Image src="/copy.png" alt="website" width={250} height={400}/>
           </div>
 
           <div className="flex flex-col">

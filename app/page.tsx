@@ -72,7 +72,7 @@ export default function Home() {
           <Image src='/lucrar.png' alt="venha lucrar" height={330} width={330}/>
         </div>
 
-        <div className="flex items-center justify-center mt-12">
+        <div className="flex justify-center mt-12">
           <ComponentService/>
         </div>
       </div>

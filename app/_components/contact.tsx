@@ -2,7 +2,6 @@ import {
   InstagramIcon,
   MailIcon,
   MessageCircleIcon,
-  ZapIcon,
 } from "lucide-react";
 import { Card } from "./ui/card";
 

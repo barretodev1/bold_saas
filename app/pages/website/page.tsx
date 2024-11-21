@@ -7,7 +7,10 @@ import Image from "next/image";
 const WebSitePage = () => {
   return (
     <>
-      <header className="flex bg-zinc-300 border-b border items-center w-full p-4 items-center justify-center" id="home">
+      <header
+        className="flex bg-zinc-300 border-b border items-center w-full p-4 items-center justify-center"
+        id="home"
+      >
         <div>
           <Image src="/logo.webp" alt="logo" width={150} height={150} />
         </div>
@@ -15,7 +18,7 @@ const WebSitePage = () => {
 
       <div className="p-8 mt-1" id="lucrar">
         <div className="flex justify-center items-center grid grid-cols-1 gap-7 md:grid-cols-3 flex justify-center items-center">
-          <Card className="relative h-[110vh] md:h-[108vh]">
+          <Card className="relative h-full md:h-[108vh]">
             <CardContent>
               <div className="mb-5 h-56 items-center justify-center">
                 <Image
@@ -32,65 +35,71 @@ const WebSitePage = () => {
                   Landing Page.
                 </h1>
 
-                <p className="flex flex-row gap-2 items-center ">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                <div>
+                  <p className="flex flex-row gap-2 items-center ">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Domínio grátis por 1 ano
-                </p>
-                <p className="flex flex-row gap-2 items-center ">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center ">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Captação de Leads Qualificados
-                </p>
-                <p className="flex flex-row gap-2 items-center ">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center ">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Otimização para SEO
-                </p>
-                <p className="flex flex-row gap-2 items-center ">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center ">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Design Responsivo
-                </p>
-                <p className="flex flex-row gap-2 items-center ">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center ">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Botão de Contato Direto
-                </p>
-                <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
-                    <CircleMinusIcon className="text-zinc-500" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     Mapas e Localização Integrados
-                </p>
-                <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
-                    <CircleMinusIcon className="text-zinc-500" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     Velocidade de Navegação Otimizada
-                </p>
-                <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
-                    <CircleMinusIcon className="text-zinc-500" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     Acompanhamento Profissional
-                </p>
-                <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
-                    <CircleMinusIcon className="text-zinc-500" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     Compra direta pelo site
-                </p>
-                <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
-                    <CircleMinusIcon className="text-zinc-500" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     Pagamento Seguro com Várias Opções
-                </p>
-                <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
-                    <CircleMinusIcon className="text-zinc-500" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     Promoções Personalizadas
-                </p>
-                <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
-                    <CircleMinusIcon className="text-zinc-500" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     Suporte Técnico Especializado
-                </p>
-
-
+                  </p>
+                </div>
               </div>
 
-              <Button className="w-44 bottom-0 mb-4 absolute bg-violet-600">
-                Quero lucrar!
-              </Button>
+            
+            <div className="flex mt-14">
+              <a href="https://form.jotform.com/243248742500654">
+                <Button className="flex w-44 mt-6 bottom-0 mb-4 absolute bg-violet-600">
+                  Quero lucrar!
+                </Button>
+              </a>
+            </div>
+            
             </CardContent>
           </Card>
 
-          <Card className="relative h-[110vh] md:h-[108vh]">
+          <Card className="relative h-full md:h-[108vh]">
             <CardContent className="">
               <div className="top-0 mb-5 flex justify-center">
                 <Image
@@ -107,65 +116,71 @@ const WebSitePage = () => {
                   Site Institucional.
                 </h1>
 
-
-                <p className="flex flex-row gap-2 items-center ">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                <div>
+                  <p className="flex flex-row gap-2 items-center ">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Domínio grátis por 1 ano
-                </p>
-                <p className="flex flex-row gap-2 items-center ">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center ">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Captação de Leads Qualificados
-                </p>
-                <p className="flex flex-row gap-2 items-center ">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center ">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Otimização para SEO
-                </p>
-                <p className="flex flex-row gap-2 items-center ">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center ">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Design Responsivo
-                </p>
-                <p className="flex flex-row gap-2 items-center ">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center ">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Botão de Contato Direto
-                </p>
-                <p className="flex flex-row gap-2 items-center">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Mapas e Localização Integrados
-                </p>
-                <p className="flex flex-row gap-2 items-center">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Velocidade de Navegação Otimizada
-                </p>
-                <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
-                    <CircleMinusIcon className="text-zinc-500" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     Acompanhamento Profissional
-                </p>
-                <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
-                    <CircleMinusIcon className="text-zinc-500" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     Compra direta pelo site
-                </p>
-                <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
-                    <CircleMinusIcon className="text-zinc-500" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     Pagamento Seguro com Várias Opções
-                </p>
-                <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
-                    <CircleMinusIcon className="text-zinc-500" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     Promoções Personalizadas
-                </p>
-                <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
-                    <CircleMinusIcon className="text-zinc-500" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center italic text-decoration: line-through text-zinc-500">
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     Suporte Técnico Especializado
-                </p>
-
+                  </p>
+                </div>
               </div>
 
-              <Button className="w-44 bottom-0 mb-4 absolute bg-violet-600">
+                         
+            <div className="flex mt-14">
+              <a href="https://form.jotform.com/243248745332660">
+              <Button className="flex w-44 mt-6 bottom-0 mb-4 absolute bg-violet-600">
                 Quero lucrar!
               </Button>
+              </a>
+            
+            </div>
             </CardContent>
           </Card>
 
-          <Card className="relative h-[110vh] md:h-[108vh]">
+          <Card className="relative h-full md:h-[108vh]">
             <CardContent>
               <div className="top-0 mb-5 flex justify-center">
                 <Image
@@ -183,66 +198,64 @@ const WebSitePage = () => {
                 </h1>
 
                 <div>
-                <p className="flex flex-row gap-2 items-center ">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  <p className="flex flex-row gap-2 items-center ">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Domínio grátis por 1 ano
-                </p>
-                <p className="flex flex-row gap-2 items-center ">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center ">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Captação de Leads Qualificados
-                </p>
-                <p className="flex flex-row gap-2 items-center ">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center ">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Otimização para SEO
-                </p>
-                <p className="flex flex-row gap-2 items-center ">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center ">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Design Responsivo
-                </p>
-                <p className="flex flex-row gap-2 items-center ">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center ">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Botão de Contato Direto
-                </p>
-                <p className="flex flex-row gap-2 items-center">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
-                    Mapas e Localização Integrados
-                </p>
-                <p className="flex flex-row gap-2 items-center">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
-                    Velocidade de Navegação Otimizada
-                </p>
-              <p className="flex flex-row gap-2 items-center">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
-                    Acompanhamento Profissional
-                </p>
+                  </p>
                   <p className="flex flex-row gap-2 items-center">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
+                    Mapas e Localização Integrados
+                  </p>
+                  <p className="flex flex-row gap-2 items-center">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
+                    Velocidade de Navegação Otimizada
+                  </p>
+                  <p className="flex flex-row gap-2 items-center">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
+                    Acompanhamento Profissional
+                  </p>
+                  <p className="flex flex-row gap-2 items-center">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Compra direta pelo site
-                </p>
-                 <p className="flex flex-row gap-2 items-center">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className=" flex flex-row gap-2 items-center">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Pagamento Seguro com Várias Opções
-                </p>
-                   <p className="flex flex-row gap-2 items-center">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Promoções Personalizadas
-                </p>
-                 <p className="flex flex-row gap-2 items-center">
-                    <CircleCheckBigIcon className="text-green-600" size={17}/>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center">
+                    <CircleCheckBigIcon className="text-green-600" size={17} />
                     Suporte Técnico Especializado
-                </p>
-
+                  </p>
                 </div>
               </div>
 
-              <div>
+              <div className="flex mt-14">
                 <a href="https://form.jotform.com/243247402781051">
-                  <Button className="w-44 bottom-0 mb-4 absolute bg-violet-600">
+                  <Button className="w-44 mt-6 bottom-0 mb-4 absolute bg-violet-600">
                     Quero lucrar!
                   </Button>
                 </a>
               </div>
-              
             </CardContent>
           </Card>
         </div>

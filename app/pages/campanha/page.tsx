@@ -110,7 +110,7 @@ const TrafegoPage = () => {
                   <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
                     <CircleCheckBigIcon className="text-green-600" size={17} />
                     <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
-                      Reuniões Mensais para otimização.
+                      2 Reuniões Mensais para otimização.
                     </span>
                   </p>
                 </div>

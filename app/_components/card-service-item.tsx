@@ -15,6 +15,10 @@ const ComponentService = () => {
     router.push('/pages/website')
   }
 
+  const handleTrafego = () => {
+    router.push('/pages/campanha')
+  }
+
   return (
     <div className="flex justify-center items-center grid grid-cols-1 gap-7 md:grid-cols-3 flex justify-center items-center">
     
@@ -62,7 +66,7 @@ const ComponentService = () => {
           </div>
 
           <div className="flex mt-14">
-            <Button className="w-44 bottom-0 mb-4 absolute bg-violet-600">Quero lucrar!</Button>
+            <Button onClick={handleTrafego} className="w-44 bottom-0 mb-4 absolute bg-violet-600">Quero lucrar!</Button>
           </div>
           
         </CardContent>

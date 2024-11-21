@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeaderComponent() {
     return (
-    <header className="flex bg-zinc-300 border-b border items-center w-full p-4 justify-center md:justify-between">
+    <header className="flex bg-zinc-300 border-b border items-center w-full p-4 justify-center md:justify-between" id="home">
         <div>
             <Image src='/logo.webp' alt="logo" width={150} height={150} />
         </div>

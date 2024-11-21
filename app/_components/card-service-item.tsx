@@ -7,7 +7,7 @@ const ComponentService = () => {
   return (
     <div className="flex justify-center items-center grid grid-cols-1 gap-7 md:grid-cols-3 flex justify-center items-center">
     
-      <Card className="relative h-[55vh] md:h-[70vh]">
+      <Card className="relative h-[58vh] md:h-[70vh]">
         <CardContent>
           <div className="mb-5 h-56 items-center justify-center">
             <Image
@@ -33,7 +33,7 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card className="relative h-[55vh] md:h-[70vh]">
+      <Card className="relative h-[58vh] md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-5 flex justify-center">
             <Image src="/trafego.png" alt="trafego pago" className="h-56" width={250} height={400}/>
@@ -52,7 +52,7 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card className="relative h-[55vh] md:h-[70vh]">
+      <Card className="relative h-[58vh] md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-5 flex justify-center">
             <Image src="/design.png" alt="website" className="h-56" width={200} height={400}/>
@@ -63,7 +63,7 @@ const ComponentService = () => {
               Identidade Visual e Design
             </h1>
             <p className="text-sm font-normal text-zinc-600 mt-1">
-                Transforme sua marca com uma identidade visual única! Criamos designs exclusivos e logos chamativas, que se conectam com seu cliente...
+                Transforme sua marca com uma identidade visual única! Criamos designs exclusivos e logos chamativas.
             </p>
           </div>
 
@@ -71,7 +71,7 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card className="relative h-[55vh] md:h-[70vh]">
+      <Card className="relative h-[58vh] md:h-[70vh]">
         <CardContent>
           <div className="mb-5 h-56 items-center justify-center">
             <Image
@@ -88,7 +88,7 @@ const ComponentService = () => {
               Gestão de Social Media
             </h1>
             <p className="text-sm font-normal text-zinc-600 mt-1">
-            Gerenciamento estratégico de redes sociais, com criação de conteúdos impactantes e personalizados para engajar o público...
+            Gerenciamento estratégico de redes sociais, com criação de conteúdos impactantes e personalizados.
             </p>
           </div>
 
@@ -96,7 +96,7 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card className="relative h-[55vh] md:h-[70vh]">
+      <Card className="relative h-[58vh] md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-1 flex justify-center mt-4">
             <Image src="/consult.png" alt="trafego pago" className="h-56" width={230} height={300} />
@@ -110,13 +110,13 @@ const ComponentService = () => {
             Orientação especializada para otimizar campanhas, fortalecer sua marca e alcançar melhores resultados. </p>
           </div>
 
-          <div className="flex flex-row gap-44">
+          <div className="flex flex-row gap-52 justify-between">
             <div>
-              <Button className="w-44 bottom-0 mb-4 absolute bg-violet-600">Quero lucrar!</Button>
+              <Button className="w-40 bottom-0 mb-4 absolute bg-violet-600">Quero lucrar!</Button>
             </div>
             <div className="">
               <a href="https://form.jotform.com/243236228275659">
-                <Button className="w-24 bottom-0 mb-4 absolute right-0 mr-3">Grátis!</Button>
+                <Button className="w-20 bottom-0 mb-4 absolute right-0 mr-5 md:mr-5">Grátis!</Button>
               </a>
             </div>
          
@@ -125,7 +125,7 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card className="relative h-[55vh] md:h-[70vh]">
+      <Card className="relative h-[58vh] md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-5 flex justify-center h-56">
             <Image src="/copy.png" alt="website" width={250} height={400}/>

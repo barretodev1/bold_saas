@@ -7,6 +7,7 @@ import ComponentContact from "./_components/contact";
 import ComponentService from "./_components/card-service-item";
 import SmoothScrollLinks from "../app/_components/scroll"
 import ComponentFooter from "./_components/footer";
+import { ArrowUpIcon } from "lucide-react";
 
 export default function Home() {
  
@@ -16,6 +17,15 @@ export default function Home() {
       <SmoothScrollLinks/>
       {/* HEADER COMPONENT */}
       <HeaderComponent />
+
+      {/* HOME BUTTON */}
+      <div className="relative hidden md:inline">
+        <a href="#home">
+          <Button className="fixed right-0 bottom-0 mb-4 mr-5 z-30 bg-violet-600">
+           <ArrowUpIcon/>
+          </Button>
+        </a>
+      </div>
 
       {/* COMPONENT MAIN */}
       <main className="flex items-center justify-evenly mt-12 flex-col p-5 xl:flex-row">

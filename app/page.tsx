@@ -55,11 +55,11 @@ export default function Home() {
 
       {/* COMPONENT ABOUT */}
       <div className="flex flex-col items-center p-5 justify-center" id="sobre">
-        <div className="h-[360px]">
-          <Image src="/about.png" alt="sobre nós" height={400} width={400} />
+        <div className="h-[360px] mt-10">
+          <Image src="/about.png" alt="sobre nós" height={300} width={300} />
         </div>
 
-        <div className="flex items-center justify-center gap-11 flex-col md:flex-row">
+        <div className="flex items-center justify-center gap-11 flex-col mt-5 md:flex-row">
           <div className="bg-zinc-300 p-7 h-96 w-80 flex items-center justify-center flex-col rounded-xl">
             <h1 className="text-xl font-semibold mb-6">Missão</h1>
             <p className="text-base">Nossa missão vai além de simplesmente oferecer serviços – nossa missão é estar ao seu lado em cada passo da sua jornada. Estamos aqui para pegar na sua mão, ouvir suas necessidades e guiá-lo com estratégia e dedicação. Vamos te ajudar a conquistar resultados extraordinários!</p>

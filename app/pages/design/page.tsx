@@ -49,8 +49,8 @@ const DesignPage = () => {
                     <CircleCheckBigIcon className="text-green-600" size={17} />
                     1 Reunião Mensal    
                   </p>
-                  <p className="flex flex-row gap-2 items-center   text-decoration: line-through text-zinc-500">
-                    <CircleMinusIcon className="text-zinc-500" size={17} />
+                  <p className="flex flex-row gap-2   items-center ">
+                  <CircleCheckBigIcon className="text-green-600" size={17} />
                     Criação de Layouts Personalizados
                   </p>
                   <p className="flex flex-row gap-2 items-center   text-decoration: line-through text-zinc-500">

@@ -23,6 +23,18 @@ const ComponentService = () => {
     router.push('/pages/design')
   }
 
+  const handleCopy = () => {
+    router.push('/pages/copywriting')
+  }
+
+  const handleMedia = () => {
+    router.push('/pages/social&media')
+  }
+
+  const handleMarketing = () => {
+    router.push('/pages/marketing')
+  }
+
   return (
     <div className="flex justify-center items-center grid grid-cols-1 gap-7 md:grid-cols-3 flex justify-center items-center">
     
@@ -120,7 +132,7 @@ const ComponentService = () => {
           </div>
 
           <div className="flex mt-14">
-            <Button className="w-44 bottom-0 mb-4 absolute bg-violet-600">Quero lucrar!</Button>
+            <Button onClick={handleMedia} className="w-44 bottom-0 mb-4 absolute bg-violet-600">Quero lucrar!</Button>
           </div>
           
         </CardContent>
@@ -142,7 +154,7 @@ const ComponentService = () => {
 
           <div className="flex flex-row gap-52 mt-14 justify-between">
             <div>
-              <Button className="w-40 bottom-0 mb-4 absolute bg-violet-600">Quero lucrar!</Button>
+              <Button onClick={handleMarketing} className="w-40 bottom-0 mb-4 absolute bg-violet-600">Quero lucrar!</Button>
             </div>
             <div className="">
               <a href="https://w.app/boldcompany">
@@ -170,7 +182,7 @@ const ComponentService = () => {
           </div>
 
           <div className="flex mt-14">
-            <Button className="w-44 bottom-0 mb-4 absolute bg-violet-600">Quero lucrar!</Button>
+            <Button onClick={handleCopy} className="w-44 bottom-0 mb-4 absolute bg-violet-600">Quero lucrar!</Button>
           </div>
           
         </CardContent>

@@ -7,7 +7,7 @@ import ComponentContact from "./_components/contact";
 import ComponentService from "./_components/card-service-item";
 import SmoothScrollLinks from "../app/_components/scroll";
 import ComponentFooter from "./_components/footer";
-import { ArrowUpIcon, CircleCheckIcon } from "lucide-react";
+import { ArrowUpIcon } from "lucide-react";
 import { Card, CardContent } from "./_components/ui/card";
 
 export default function Home() {

@@ -56,7 +56,7 @@ export default function Home() {
       {/* COMPONENT ABOUT */}
       <div className="flex flex-col items-center p-5 justify-center" id="sobre">
         <div className="h-[360px] mt-10">
-          <Image src="/about.png" alt="sobre nós" height={300} width={300} />
+          <Image src="/about.png" alt="sobre nós" height={280} width={280} />
         </div>
 
         <div className="flex items-center justify-center gap-11 flex-col mt-5 md:flex-row">

@@ -71,18 +71,18 @@ export default function Home() {
       </main>
 
       {/* COMPONENT ABOUT */}
-      <div className="flex flex-col items-center p-5 justify-center" id="sobre">
-        <div className="h-[360px] mt-16">
+      <div className="flex flex-col items-center p-5 justify-center hidden md:inline " id="sobre">
+        <div className="flex items-center justify-center h-[360px] mt-16">
           <Image src="/about.png" alt="sobre nós" height={280} width={280} />
         </div>
 
-        <div className="flex items-center justify-center gap-9 flex-col md:flex-row">
+        <div className="flex items-center justify-center p-6 gap-4 flex-col md:flex-row">
 
           {/* CARD MISSAO */}
-          <Card className="relative h-full w-full md:h-full">
+          <Card className="relative h-full md:h-full">
             <CardContent>
               <div className="flex flex-col mt-9">
-                <h1 className=" flex items-center justify-center text-xl mb-5 font-bold">
+                <h1 className="flex items-center justify-center text-xl mb-5 font-bold">
                   MISSÃO
                 </h1>
 
@@ -124,7 +124,7 @@ export default function Home() {
           </Card>
 
           {/* CARD VISAO */}
-          <Card className="relative h-full w-full md:h-full">
+          <Card className="relative h-full w-[100px] md:h-full w-full">
             <CardContent>
               <div className="flex flex-col mt-9">
                 <h1 className=" flex items-center justify-center text-xl mb-5 font-bold">
@@ -169,7 +169,7 @@ export default function Home() {
           </Card>
 
           {/* CARD VALORES */}
-          <Card className="relative h-full w-full md:h-full">
+          <Card className="relative h-full w-[330px] md:h-full w-full">
             <CardContent>
               <div className="flex flex-col mt-9">
                 <h1 className=" flex items-center justify-center text-xl mb-5 font-bold">
@@ -206,6 +206,151 @@ export default function Home() {
                   <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
                     <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
                       - Personalização para atender necessidades.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>   
+        </div>
+      </div>
+
+      {/* COMPONENT ABOUT CELL*/}
+      <div className="flex flex-col items-center p-8 justify-center inline md:hidden" id="sobre">
+        <div className="h-[360px] mt-16">
+          <Image src="/about.png" alt="sobre nós" height={280} width={280} />
+        </div>
+
+        <div className="flex items-center justify-center gap-9 flex-col md:flex-row">
+
+          {/* CARD MISSAO */}
+          <Card className="relative h-full w-[360px]">
+            <CardContent>
+              <div className="flex flex-col mt-9">
+                <h1 className=" flex items-center justify-center text-xl mb-5 font-bold">
+                  MISSÃO
+                </h1>
+
+                <div className="flex flex-col gap-1">
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Transformar ideias em resultados.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Conectar marcas ao seu público ideal.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Potencializar negócios com criatividade.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Simplificar o marketing.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Gerar impacto através de inovação.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Impulsionar marcas com campanhas.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* CARD VISAO */}
+          <Card className="relative h-full w-[360px]">
+            <CardContent>
+              <div className="flex flex-col mt-9">
+                <h1 className=" flex items-center justify-center text-xl mb-5 font-bold">
+                  VISÃO
+                </h1>
+
+                <div className="flex flex-col gap-1">
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Ser referência em marketing criativo.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Liderar tendências no mercado digital.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Inspirar confiança com resultados.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Revolucionar conexões entre marcas.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Crescer junto com nossos clientes.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Ser a escolha nº 1 em marketing.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* CARD VALORES */}
+          <Card className="relative h-full w-[360px]">
+            <CardContent>
+              <div className="flex flex-col mt-9">
+                <h1 className=" flex items-center justify-center text-xl mb-5 font-bold">
+                  VALORES
+                </h1>
+
+                <div className="flex flex-col gap-1">
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Criatividade que inspira ações incríveis.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Foco total na entrega de resultados.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Ética e transparência em cada decisão.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Parcerias que constroem histórias.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Inovação como guia em tudo.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Personalização de atendimento.
                     </span>
                   </p>
                 </div>

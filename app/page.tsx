@@ -5,16 +5,15 @@ import Image from "next/image";
 import { Button } from "./_components/ui/button";
 import ComponentContact from "./_components/contact";
 import ComponentService from "./_components/card-service-item";
-import SmoothScrollLinks from "../app/_components/scroll"
+import SmoothScrollLinks from "../app/_components/scroll";
 import ComponentFooter from "./_components/footer";
-import { ArrowUpIcon } from "lucide-react";
+import { ArrowUpIcon, CircleCheckIcon } from "lucide-react";
+import { Card, CardContent } from "./_components/ui/card";
 
 export default function Home() {
- 
   return (
     <div>
-
-      <SmoothScrollLinks/>
+      <SmoothScrollLinks />
       {/* HEADER COMPONENT */}
       <HeaderComponent />
 
@@ -22,19 +21,32 @@ export default function Home() {
       <div className="relative hidden md:inline">
         <a href="#home">
           <Button className="fixed right-0 bottom-0 mb-4 mr-5 z-30 bg-violet-600">
-           <ArrowUpIcon/>
+            <ArrowUpIcon />
           </Button>
         </a>
       </div>
 
       {/* COMPONENT MAIN */}
       <main className="flex items-center justify-evenly mt-12 flex-col p-5 xl:flex-row">
-        <Image src="/MainMarket.svg" alt="imagem principal" width={400} height={400} />
+        <Image
+          src="/MainMarket.svg"
+          alt="imagem principal"
+          width={400}
+          height={400}
+        />
         <div className="hidden md:inline">
-          <h1 className="text-xl mb-2">Alavanque seus <span className="text-xl font-bold">negócios!</span></h1>
+          <h1 className="text-xl mb-2">
+            Alavanque seus <span className="text-xl font-bold">negócios!</span>
+          </h1>
           <h2 className="text-lg">
-            Está com dificuldade em vender, captar leads,<br />conquistar clientes e alavancar seu negócio, né?
-            <br />Mude para uma estratégia assertiva com a <span className="text-lg font-extrabold text-violet-600">BOLD.</span>
+            Está com dificuldade em vender, captar leads,
+            <br />
+            conquistar clientes e alavancar seu negócio, né?
+            <br />
+            Mude para uma estratégia assertiva com a{" "}
+            <span className="text-lg font-extrabold text-violet-600">
+              BOLD.
+            </span>
           </h2>
           <a href="https://wa.me/11933255476">
             <Button className="mt-5 w-60 h-10">Lucrar agora!</Button>
@@ -43,9 +55,14 @@ export default function Home() {
 
         {/* DIV DO CELULAR (Mobile View) */}
         <div className="flex items-center justify-center flex-col mt-4 p-4 xl:hidden sm:hidden">
-          <h1 className="text-xl mb-1">Alavanque seus <span className="text-xl font-bold">negócios!</span></h1>
+          <h1 className="text-xl mb-1">
+            Alavanque seus <span className="text-xl font-bold">negócios!</span>
+          </h1>
           <h2 className="text-lg">
-            COM A <span className="text-lg font-extrabold text-violet-600">BOLD COMPANY.</span>
+            COM A{" "}
+            <span className="text-lg font-extrabold text-violet-600">
+              BOLD COMPANY.
+            </span>
           </h2>
           <a href="https://wa.me/11933255476">
             <Button className="mt-3 w-60 h-10">Lucrar agora!</Button>
@@ -55,55 +72,183 @@ export default function Home() {
 
       {/* COMPONENT ABOUT */}
       <div className="flex flex-col items-center p-5 justify-center" id="sobre">
-        <div className="h-[360px] mt-10">
+        <div className="h-[360px] mt-16">
           <Image src="/about.png" alt="sobre nós" height={280} width={280} />
         </div>
 
-        <div className="flex items-center justify-center gap-11 flex-col mt-5 md:flex-row">
-          <div className="bg-zinc-300 p-7 h-96 w-80 flex items-center justify-center flex-col rounded-xl">
-            <h1 className="text-xl font-semibold mb-6">Missão</h1>
-            <p className="text-base">Nossa missão vai além de simplesmente oferecer serviços – nossa missão é estar ao seu lado em cada passo da sua jornada. Estamos aqui para pegar na sua mão, ouvir suas necessidades e guiá-lo com estratégia e dedicação. Vamos te ajudar a conquistar resultados extraordinários!</p>
-          </div>
+        <div className="flex items-center justify-center gap-9 flex-col md:flex-row">
 
-          <div className="bg-zinc-300 p-7 h-96 w-80 flex items-center justify-center flex-col rounded-xl">
-            <h1 className="text-xl font-semibold mb-6">Visão</h1>
-            <p>Nossa visão é transformar a maneira como as empresas se conectam com o mercado, criando estratégias inovadoras que vão além do convencional. Queremos ser a força que impulsiona o seu crescimento, a chave que desbloqueia um futuro mais próspero e cheio de oportunidades.</p>
-          </div>
+          {/* CARD MISSAO */}
+          <Card className="relative h-full w-full md:h-full">
+            <CardContent>
+              <div className="flex flex-col mt-9">
+                <h1 className=" flex items-center justify-center text-xl mb-5 font-bold">
+                  MISSÃO
+                </h1>
 
-          <div className="bg-zinc-300 p-7 w-80 h-96 flex items-center justify-center flex-col rounded-xl">
-            <h1 className="text-xl font-semibold mb-6">Valores</h1>
-            <p>Em tudo o que fazemos, acreditamos que o sucesso verdadeiro nasce da empatia. Nossa missão é sempre entender de forma profunda as necessidades dos nossos clientes, pois sabemos que cada negócio é único. Por isso, oferecemos soluções personalizadas!</p>
-          </div>
+                <div className="flex flex-col gap-1">
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Transformar ideias em resultados memoráveis.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Conectar marcas ao seu público ideal.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Potencializar negócios com criatividade.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Simplificar o marketing, amplificar resultados.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Gerar impacto através de inovação.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Impulsionar marcas com campanhas.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* CARD VISAO */}
+          <Card className="relative h-full w-full md:h-full">
+            <CardContent>
+              <div className="flex flex-col mt-9">
+                <h1 className=" flex items-center justify-center text-xl mb-5 font-bold">
+                  VISÃO
+                </h1>
+
+                <div className="flex flex-col gap-1">
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Ser referência em marketing criativo.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Liderar tendências no mercado digital.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Inspirar confiança com resultados consistentes.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Revolucionar conexões entre marcas e pessoas.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Crescer junto com nossos clientes.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Ser a escolha nº 1 em marketing.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* CARD VALORES */}
+          <Card className="relative h-full w-full md:h-full">
+            <CardContent>
+              <div className="flex flex-col mt-9">
+                <h1 className=" flex items-center justify-center text-xl mb-5 font-bold">
+                  VALORES
+                </h1>
+
+                <div className="flex flex-col gap-1">
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Criatividade que inspira ações incríveis.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Foco total na entrega de resultados.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Ética e transparência em cada decisão.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Parcerias que constroem histórias de sucesso.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Inovação como guia em tudo que fazemos.
+                    </span>
+                  </p>
+                  <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
+                    <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
+                      - Personalização para atender necessidades.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>   
         </div>
       </div>
 
       {/* COMPONENT LUCRAR */}
       <div className="p-8 mt-16" id="lucrar">
         <div className="flex items-center justify-center">
-          <Image src='/lucrar.png' alt="venha lucrar" height={330} width={330}/>
+          <Image
+            src="/lucrar.png"
+            alt="venha lucrar"
+            height={330}
+            width={330}
+          />
         </div>
 
         <div className="flex justify-center mt-12">
-          <ComponentService/>
+          <ComponentService />
         </div>
       </div>
 
-       {/* COMPONENT CONTACT US */}
-       <div className="flex flex-col items-center justify-center p-5 pt-16" id="contato">
+      {/* COMPONENT CONTACT US */}
+      <div
+        className="flex flex-col items-center justify-center p-5 pt-16"
+        id="contato"
+      >
         <div>
-          <Image src='/contato.png' alt="contato" height={300} width={300}/>
+          <Image src="/contato.png" alt="contato" height={300} width={300} />
         </div>
 
         <div className="flex items-center justify-center mt-12">
-          <ComponentContact/>
+          <ComponentContact />
         </div>
       </div>
 
       {/* COMPONENT FOOTER */}
       <div className="mt-20 w-full">
-        <ComponentFooter/>
+        <ComponentFooter />
       </div>
-
     </div>
   );
 }

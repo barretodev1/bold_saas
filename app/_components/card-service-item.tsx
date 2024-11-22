@@ -145,7 +145,7 @@ const ComponentService = () => {
               <Button className="w-40 bottom-0 mb-4 absolute bg-violet-600">Quero lucrar!</Button>
             </div>
             <div className="">
-              <a href="https://form.jotform.com/243236228275659">
+              <a href="https://w.app/boldcompany">
                 <Button className="w-20 bottom-0 mb-4 absolute right-0 mr-5 md:mr-5">Grátis!</Button>
               </a>
             </div>

@@ -77,7 +77,7 @@ const DesignPage = () => {
               </div>
 
               <div className="flex mt-14">
-                <a href="https://form.jotform.com/243255324709659">
+                <a href="https://form.jotform.com/243258553976672">
                   <Button className="flex w-44 mt-6 bottom-0 mb-4 absolute bg-violet-600">
                     Quero lucrar!
                   </Button>
@@ -144,7 +144,7 @@ const DesignPage = () => {
               </div>
 
               <div className="flex mt-14">
-                <a href="https://form.jotform.com/243255324709659">
+                <a href="https://form.jotform.com/243258553976672">
                   <Button className="flex w-44 mt-6 bottom-0 mb-4 absolute bg-violet-600">
                     Quero lucrar!
                   </Button>
@@ -211,7 +211,7 @@ const DesignPage = () => {
               </div>
 
               <div className="flex mt-14">
-                <a href="https://form.jotform.com/243255324709659">
+                <a href="https://form.jotform.com/243258553976672">
                   <Button className="flex w-44 mt-6 bottom-0 mb-4 absolute bg-violet-600">
                     Quero lucrar!
                   </Button>

@@ -41,7 +41,7 @@ const ClientPage = () => {
               </div>
 
               <div className="flex text-center flex-col items-center justify-center">
-                <h1>"Qualidade Inigualável!"</h1>
+                <h1>Qualidade Inigualável!</h1>
                 <p>
                   O serviço foi impecável do início ao fim, superando todas as
                   expectativas.
@@ -66,7 +66,7 @@ const ClientPage = () => {
               </div>
 
               <div className="flex text-center flex-col items-center justify-center">
-                <h1>"Recomendo de olhos fechados!"</h1>
+                <h1>Recomendo de olhos fechados!</h1>
                 <p>
                   Serviço excelente, equipe dedicada e resultado maravilhoso.
                   Parabéns!
@@ -91,7 +91,7 @@ const ClientPage = () => {
               </div>
 
               <div className="flex text-center flex-col items-center justify-center">
-                <h1>"Atendimento Fantástico!"</h1>
+                <h1>Atendimento Fantástico!</h1>
                 <p>
                   Equipe extremamente atenciosa e eficiente. Recomendo a todos!
                 </p>
@@ -116,7 +116,7 @@ const ClientPage = () => {
               </div>
 
               <div className="flex text-center flex-col items-center justify-center">
-                <h1>"Superou minhas expectativas!"</h1>
+                <h1>Superou minhas expectativas!</h1>
                 <p>
                   Desde o atendimento até a entrega, tudo foi perfeito. Produto
                   de altíssima qualidade!

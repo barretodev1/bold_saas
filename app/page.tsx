@@ -9,6 +9,7 @@ import SmoothScrollLinks from "../app/_components/scroll";
 import ComponentFooter from "./_components/footer";
 import { ArrowUpIcon } from "lucide-react";
 import { Card, CardContent } from "./_components/ui/card";
+import ClientPage from "./_components/client";
 
 export default function Home() {
   return (
@@ -374,6 +375,11 @@ export default function Home() {
         <div className="flex justify-center mt-12">
           <ComponentService />
         </div>
+      </div>
+
+      {/* COMPONENT CARROSEL */}
+      <div className="p-8 mt-16" id="lucrar">
+        <ClientPage/>
       </div>
 
       {/* COMPONENT CONTACT US */}

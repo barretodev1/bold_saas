@@ -9,7 +9,7 @@ import SmoothScrollLinks from "../app/_components/scroll";
 import ComponentFooter from "./_components/footer";
 import { ArrowUpIcon } from "lucide-react";
 import { Card, CardContent } from "./_components/ui/card";
-import ClientPage from "./_components/client";
+import CookieBanner from "./_components/cookies";
 
 export default function Home() {
   return (
@@ -17,6 +17,9 @@ export default function Home() {
       <SmoothScrollLinks />
       {/* HEADER COMPONENT */}
       <HeaderComponent />
+
+      {/* COMPONENT COOKIES */}
+      <CookieBanner/>
 
       {/* HOME BUTTON */}
       <div className="relative hidden md:inline">
@@ -375,11 +378,6 @@ export default function Home() {
         <div className="flex justify-center mt-12">
           <ComponentService />
         </div>
-      </div>
-
-      {/* COMPONENT CARROSEL */}
-      <div className="p-8 mt-16" id="lucrar">
-        <ClientPage/>
       </div>
 
       {/* COMPONENT CONTACT US */}

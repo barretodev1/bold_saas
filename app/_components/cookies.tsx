@@ -25,31 +25,28 @@ const CookieBanner = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-zinc-500 text-white p-4 z-50">
-      <div className="flex items-center justify-between">
-        <p>
-          Utilizamos cookies para melhorar sua experiência. Para mais
-          informações, leia nossa{" "}
-          <a href="/politica-de-cookies" className="underline">
-            política de cookies
-          </a>
-          .
-        </p>
-        <div className="flex space-x-2">
-          <button
-            onClick={handleAccept}
-            className="bg-violet-600 px-4 py-2 rounded text-white hover:bg-violet-300"
-          >
-            Aceitar
-          </button>
-          <button
-            onClick={handleDecline}
-            className="bg-red-600 px-4 py-2 rounded text-white hover:bg-red-700"
-          >
-            Recusar
-          </button>
-        </div>
-      </div>
+    <div className="fixed bottom-3 left-1/2 transform -translate-x-1/2 w-[90%] bg-zinc-500 bg-opacity-50 sm:w-[50%] bg-zinc-500 bg-opacity-70 text-black p-4 z-50 flex flex-col md:flex-row items-center">
+      <span className="font-bold text-sm sm:w-[80%]">
+        Usamos cookies para personalizar a sua experiência. Ao utilizar nossos
+        sites e serviços, você concorda com o uso de cookies por nossa parte
+        conforme estabelecido na nossa{" "}
+        <a
+          href="https://assetslite.climatempo.com.br/termos"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          Política de privacidade
+        </a>
+        .
+      </span>
+      <button
+      onClick={handleAccept}
+      className="bg-violet-600 flex items-center justify-center text-white py-2 px-4 mt-4 w-[80vw] sm:w-36 hover:bg-violet-800"
+      type="button"
+    >
+      OK
+    </button>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 
 const CookieBanner = () => {
@@ -24,6 +25,12 @@ const CookieBanner = () => {
 
   if (!isVisible) return null;
 
+  const router = useRouter();
+  
+  const handleCookies = () => {
+    router.push('/pages/cookies')
+  }
+
   return (
     <div className="fixed bottom-3 left-1/2 transform -translate-x-1/2 w-[90%] bg-zinc-500 bg-opacity-50 sm:w-[50%] bg-zinc-500 bg-opacity-70 text-black p-4 z-50 flex flex-col md:flex-row items-center">
       <span className="font-bold text-sm sm:w-[80%]">
@@ -31,10 +38,10 @@ const CookieBanner = () => {
         sites e serviços, você concorda com o uso de cookies por nossa parte
         conforme estabelecido na nossa{" "}
         <a
-          href="https://assetslite.climatempo.com.br/termos"
+          onClick={handleCookies}
           target="_blank"
           rel="noopener noreferrer"
-          className="underline"
+          className="underline cursor-pointer"
         >
           Política de privacidade
         </a>

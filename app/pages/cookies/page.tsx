@@ -1,4 +1,3 @@
-import HeaderComponent from "@/app/_components/header";
 
 const CookiesContratoPage = () => {
     return ( 

@@ -18,11 +18,6 @@ const CookieBanner = () => {
     setIsVisible(false);
   };
 
-  const handleDecline = () => {
-    localStorage.setItem("cookieConsent", "declined");
-    setIsVisible(false);
-  };
-
   if (!isVisible) return null;
 
   const router = useRouter();

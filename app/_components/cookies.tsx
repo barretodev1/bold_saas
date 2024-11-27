@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 
 const CookieBanner = () => {
+  const router = useRouter();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -17,14 +18,12 @@ const CookieBanner = () => {
     localStorage.setItem("cookieConsent", "accepted");
     setIsVisible(false);
   };
-
-  if (!isVisible) return null;
-
-  const router = useRouter();
   
   const handleCookies = () => {
     router.push('/pages/cookies')
   }
+
+  if (!isVisible) return null;
 
   return (
     <div className="fixed bottom-3 left-1/2 transform -translate-x-1/2 w-[90%] bg-zinc-500 bg-opacity-50 sm:w-[50%] bg-zinc-500 bg-opacity-70 text-black p-4 z-50 flex flex-col md:flex-row items-center">

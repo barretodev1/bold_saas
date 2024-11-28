@@ -26,7 +26,7 @@ const CookieBanner = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-3 left-1/2 transform -translate-x-1/2 w-[90%] bg-zinc-500 bg-opacity-50 sm:w-[50%] bg-zinc-500 bg-opacity-70 text-black p-4 z-50 flex flex-col md:flex-row items-center">
+    <div className="fixed bottom-3 left-1/2 transform -translate-x-1/2 w-[90%] bg-zinc-500 bg-opacity-100 sm:w-[50%] bg-zinc-500 bg-opacity-100 text-black p-4 z-50 flex flex-col md:flex-row items-center">
       <span className="font-bold text-sm sm:w-[80%]">
         Usamos cookies para personalizar a sua experiência. Ao utilizar nossos
         sites e serviços, você concorda com o uso de cookies por nossa parte

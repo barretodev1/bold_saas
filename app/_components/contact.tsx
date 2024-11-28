@@ -16,14 +16,6 @@ const ComponentContact = () => {
           </Card>
         </a>
 
-        <a href="https://mailto:caiobarreo1acim@gmail.com">
-          <Card className="flex border hover:bg-zinc-200 transition-all border-solid border-zinc-600 items-center justify-center h-24 w-44">
-            <div className="flex justify-center items-center text-center">
-              <MailIcon width={50} height={50} />
-            </div>
-          </Card>
-        </a>
-
         <a href="https://wa.me/11933255476">
           <Card className="flex border hover:bg-zinc-200 transition-all border-solid border-zinc-600 items-center justify-center h-24 w-44">
             <div className="flex justify-center items-center text-center">

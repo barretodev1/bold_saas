@@ -8,7 +8,7 @@ import { Card } from "./ui/card";
 const ComponentContact = () => {
   return (
       <main className="flex flex-col items-center justify-center gap-6 md:flex-row">
-        <a href="https://www.instagram.com/oboldcompany">
+        <a target="_blank" href="https://www.instagram.com/oboldcompany">
           <Card className="flex border hover:bg-zinc-200 transition-all border-solid border-zinc-600 items-center justify-center h-24 w-44">
             <div className="flex justify-center items-center text-center">
               <InstagramIcon width={50} height={50} />

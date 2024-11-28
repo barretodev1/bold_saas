@@ -74,16 +74,14 @@ export default function Home() {
         </div>
       </main>
 
-      {/* COMPONENT ABOUT */}
-      
-
+    
       {/* COMPONENT ABOUT CELL*/}
       <div
         className="flex flex-col items-center p-8 justify-center"
         id="sobre"
       >
         <div className="h-[360px] mt-16">
-          <Image src="/about.png" alt="sobre nós" height={280} width={280} />
+          <Image src="/about.png" alt="sobre nós" height={330} width={330} />
         </div>
 
         <div className="flex items-center justify-center gap-9 flex-col md:flex-row">

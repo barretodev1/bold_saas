@@ -14,6 +14,7 @@ import { Card, CardContent } from "./_components/ui/card";
 import CookieBanner from "./_components/cookies";
 import { useEffect } from "react";
 
+
 export default function Home() {
   useEffect(() => {
     AOS.init(); // Inicializa o AOS

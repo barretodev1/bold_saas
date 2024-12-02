@@ -17,22 +17,21 @@ const CopyPage = () => {
         </div>
     </header>
 
-    <div className="p-8 flex justify-center items-center mt-1" id="lucrar">
+    <div className="p-8 flex justify-center items-center" id="lucrar">
       <div className="flex justify-center items-center ">
         <Card className="relative h-full">
-          <CardContent className="p-4">
-            <div className="top-0 mb-5 flex justify-center">
+          <CardContent className="">
+            <div className="flex top-0 justify-center">
               <Image
                 src="/copy.png"
                 alt="Técnicas de Copy"
-                className="h-56"
                 width={250}
                 height={150}
               />
             </div>
 
-            <div className="flex flex-col mt-9">
-              <h1 className="text-xl mb-5 font-bold truncate">Plano Copywriting.</h1>
+            <div className="flex flex-col">
+              <h1 className="text-xl mb-3 font-bold truncate">Plano Copywriting.</h1>
 
               <div className="">
                 <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">

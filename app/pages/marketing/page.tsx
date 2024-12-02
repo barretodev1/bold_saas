@@ -17,22 +17,21 @@ const MarketingPage = () => {
         </div>
     </header>
 
-    <div className="p-8 flex justify-center items-center mt-1" id="lucrar">
+    <div className="p-8 flex justify-center items-center" id="lucrar">
       <div className="flex justify-center items-center ">
         <Card className="relative h-full">
-          <CardContent className="px-12">
+          <CardContent className="">
             <div className="top-0 flex justify-center">
               <Image
                 src="/consult.png"
                 alt="Consultoria de Marketing"
-                className="h-56"
                 width={250}
                 height={150}
               />
             </div>
 
-            <div className="flex flex-col mt-2">
-              <h1 className="text-xl mb-5 font-bold truncate">Consultoria de Marketing.</h1>
+            <div className="flex flex-col">
+              <h1 className="text-xl mb-3 font-bold truncate">Consultoria de Marketing.</h1>
 
               <div className="">
                 <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">

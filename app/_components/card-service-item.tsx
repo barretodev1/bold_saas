@@ -54,7 +54,7 @@ const ComponentService = () => {
       )}
 
       {/* Cards */}
-      <Card data-aos="fade-up" className="relative h-full md:h-[70vh]">
+      <Card data-aos="fade-up" className="relative h-full md:h-full">
         <CardContent>
           <div className="mb-5 h-56 items-center justify-center">
             <Image
@@ -65,7 +65,7 @@ const ComponentService = () => {
               width={300}
             />
           </div>
-          <div className="flex flex-col mt-9">
+          <div className="flex flex-col">
             <h1 className="truncate text-xl font-bold">Criação de Website</h1>
             <p className="text-sm font-normal text-zinc-600 mt-1">
               Criação de Websites, sites institucionais, lojas virtuais para
@@ -83,16 +83,14 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      {/* Adicione o mesmo padrão para os outros cards */}
-      {/* Exemplo de outro card */}
-      <Card data-aos="fade-up" className="relative h-full md:h-[70vh]">
+      <Card data-aos="fade-up" className="relative h-full md:h-full">
         <CardContent>
-          <div className="top-0 mb-5 flex justify-center">
+          <div className="top-0 mb-4 flex justify-center">
             <Image
               src="/trafego.png"
               alt="trafego pago"
               className="h-56"
-              width={250}
+              width={200}
               height={400}
             />
           </div>
@@ -116,10 +114,10 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card data-aos="fade-up" className="relative h-full md:h-[70vh]">
+      <Card data-aos="fade-up" className="relative h-full md:h-full">
         <CardContent>
-          <div className="top-0 mb-5 flex justify-center">
-            <Image
+        <div className="top-0 mb-4 flex justify-center">
+        <Image
               src="/design.png"
               alt="design"
               className="h-56"
@@ -149,28 +147,23 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card data-aos="fade-up" className="relative h-full md:h-[70vh]">
+      <Card data-aos="fade-up" className="relative h-full md:h-full">
         <CardContent>
           <div className="mb-5 h-56 items-center justify-center">
             <Image
-              className="mt-[-18px]"
+              className="mt-[-15px]"
               src="/social.png"
-              alt="social media"
+              alt="Social Media"
               height={300}
               width={300}
             />
           </div>
-
-          <div className="flex flex-col mt-11">
-            <h1 className="truncate text-xl font-bold">
-              Gestão de Social Media
-            </h1>
+          <div className="flex flex-col">
+            <h1 className="truncate text-xl font-bold">Gestão de Social Media</h1>
             <p className="text-sm font-normal text-zinc-600 mt-1">
-              Gerenciamento estratégico de redes sociais, com criação de
-              conteúdos impactantes e personalizados.
+            Gerenciamento estratégico de redes sociais, com criação de conteúdos impactantes e personalizados.
             </p>
           </div>
-
           <div className="flex mt-14">
             <Button
               onClick={() => navigateWithLoading("/pages/social&media")}
@@ -182,73 +175,61 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card data-aos="fade-up" className="relative h-full md:h-[70vh]">
+      <Card data-aos="fade-up" className="relative h-full md:h-full">
         <CardContent>
-          <div className="top-0 mb-1 flex justify-center mt-4">
+          <div className="top-0 mb-4 flex justify-center">
             <Image
               src="/consult.png"
-              alt="consultoria de marketing"
+              alt="Consultoria de Marketing"
               className="h-56"
-              width={230}
-              height={300}
+              width={200}
+              height={400}
             />
           </div>
-
           <div className="flex flex-col">
             <h1 className="text-xl font-bold truncate">
-              Consultoria de Marketing
+            Consultoria de Marketing
             </h1>
             <p className="text-sm font-normal text-zinc-600 mt-1">
-              Orientação especializada para otimizar campanhas, fortalecer sua
-              marca e alcançar melhores resultados.{" "}
+            Orientação especializada para otimizar campanhas, fortalecer sua marca e alcançar melhores resultados.
             </p>
           </div>
-
-          <div className="flex flex-row gap-52 mt-14 justify-between">
-            <div>
-              <Button
-                onClick={() => navigateWithLoading("/pages/marketing")}
-                className="w-40 bottom-0 mb-4 absolute bg-violet-600"
-              >
-                Quero lucrar!
-              </Button>
-            </div>
-            <div className="">
-              <a href="https://w.app/boldcompany">
-                <Button className="w-20 bottom-0 mb-4 bg-black absolute right-0 mr-5 md:mr-5">
-                  Grátis!
-                </Button>
-              </a>
-            </div>
+          <div className="flex mt-14">
+            <Button
+              onClick={() => navigateWithLoading("/pages/marketing")}
+              className="w-44 bottom-0 mb-4 absolute bg-violet-600"
+            >
+              Quero lucrar!
+            </Button>
           </div>
         </CardContent>
       </Card>
 
-      <Card data-aos="fade-up" className="relative h-full md:h-[70vh]">
+      <Card data-aos="fade-up" className="relative h-full md:h-full">
         <CardContent>
-          <div className="top-0 mb-5 flex justify-center h-56">
-            <Image
+        <div className="top-0 mb-4 flex justify-center">
+        <Image
               src="/copy.png"
-              alt="Técnicas de Copywriting!"
-              width={250}
+              alt="Técnicas de Copy"
+              className="h-56"
+              width={200}
               height={400}
             />
           </div>
 
           <div className="flex flex-col">
             <h1 className="truncate text-xl font-bold">
-              Técnicas de Copywriting!
+            Técnicas de Copywriting!
             </h1>
             <p className="text-sm font-normal text-zinc-600 mt-1">
-              Foco em headlines impactantes, storytelling envolvente e chamadas
-              para ação irresistíveis que impulsionam vendas.
+            Foco em headlines impactantes, storytelling envolvente e chamadas para ação irresistíveis que impulsionam vendas.
             </p>
           </div>
 
           <div className="flex mt-14">
             <Button
-                onClick={() => navigateWithLoading("/pages/copywriting")}
-                className="w-44 bottom-0 mb-4 absolute bg-violet-600"
+              onClick={() => navigateWithLoading("/pages/copywriting")}
+              className="w-44 bottom-0 mb-4 absolute bg-violet-600"
             >
               Quero lucrar!
             </Button>

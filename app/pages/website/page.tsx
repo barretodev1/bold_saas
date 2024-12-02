@@ -19,20 +19,20 @@ const WebSitePage = () => {
 
       <div className="p-8 mt-1" id="lucrar">
         <div className="flex justify-center items-center grid grid-cols-1 gap-7 md:grid-cols-3 flex justify-center items-center">
-          <Card className="relative h-full md:h-[108vh]">
+          <Card className="relative h-full md:h-full">
             <CardContent>
-              <div className="mb-5 h-56 items-center justify-center">
-                <Image
+            <div className="top-0 flex justify-center">
+            <Image
                   className="mt-[-15px]"
                   src="/website.png"
                   alt="landing page"
-                  height={300}
-                  width={300}
+                  height={250}
+                  width={250}
                 />
               </div>
 
-              <div className="flex flex-col mt-9">
-                <h1 className="truncate text-xl mb-5 font-bold">
+              <div className="flex flex-col">
+                <h1 className="truncate text-xl mb-3 font-bold">
                   Landing Page.
                 </h1>
 
@@ -100,9 +100,9 @@ const WebSitePage = () => {
             </CardContent>
           </Card>
 
-          <Card className="relative h-full md:h-[108vh]">
+          <Card className="relative h-full md:h-full">
             <CardContent className="">
-              <div className="top-0 mb-5 flex justify-center">
+              <div className="top-0 mb-2 flex justify-center">
                 <Image
                   src="/virtualshop.png"
                   alt="Site institucional"
@@ -113,7 +113,7 @@ const WebSitePage = () => {
               </div>
 
               <div className="flex flex-col">
-                <h1 className="text-xl mb-5 font-bold truncate">
+                <h1 className="text-xl mb-3 font-bold truncate">
                   Site Institucional.
                 </h1>
 
@@ -181,9 +181,9 @@ const WebSitePage = () => {
             </CardContent>
           </Card>
 
-          <Card className="relative h-full md:h-[108vh]">
+          <Card className="relative h-full md:h-full">
             <CardContent>
-              <div className="top-0 mb-5 flex justify-center">
+              <div className="top-0 mb-2 flex justify-center">
                 <Image
                   src="/institucional.png"
                   alt="Loja virtual"
@@ -194,7 +194,7 @@ const WebSitePage = () => {
               </div>
 
               <div className="flex flex-col">
-                <h1 className="truncate mb-5 text-xl font-bold">
+                <h1 className="truncate mb-3 text-xl font-bold">
                   Loja Virtual.
                 </h1>
 

@@ -17,9 +17,9 @@ const TrafegoPage = () => {
         </div>
       </header>
 
-      <div className="p-8 mt-1" id="lucrar">
+      <div className="p-8" id="lucrar">
         <div className="flex justify-center items-center grid grid-cols-1 gap-7 md:grid-cols-3 flex justify-center items-center">
-          <Card className="relative h-full md:h-[80vh]">
+          <Card className="relative h-full md:h-full">
             <CardContent>
               <div className="flex mb-5 h-56 items-center justify-center">
                 <Image
@@ -31,8 +31,8 @@ const TrafegoPage = () => {
                 />
               </div>
 
-              <div className="flex flex-col mt-9">
-                <h1 className="truncate text-xl mb-5 font-bold">Google Ads.</h1>
+              <div className="flex flex-col">
+                <h1 className="truncate text-xl mb-3 font-bold">Google Ads.</h1>
 
                 <div>
                   <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
@@ -65,7 +65,7 @@ const TrafegoPage = () => {
 
               <div className="flex mt-14">
                 <a href="https://form.jotform.com/243255324709659">
-                  <Button className="flex w-44 mt-6 bottom-0 mb-4 absolute bg-violet-600">
+                  <Button className="flex w-44 bottom-0 mb-4 absolute bg-violet-600">
                     Quero lucrar!
                   </Button>
                 </a>
@@ -73,7 +73,7 @@ const TrafegoPage = () => {
             </CardContent>
           </Card>
 
-          <Card className="relative h-full md:h-[80vh]">
+          <Card className="relative h-full md:h-full">
             <CardContent className="">
               <div className="top-0 mb-5 flex justify-center">
                 <Image
@@ -85,8 +85,8 @@ const TrafegoPage = () => {
                 />
               </div>
 
-              <div className="flex flex-col mt-9">
-                <h1 className="text-xl mb-5 font-bold truncate">Meta Ads.</h1>
+              <div className="flex flex-col">
+                <h1 className="text-xl mb-3 font-bold truncate">Meta Ads.</h1>
 
                 <div className="">
                   <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">
@@ -126,7 +126,7 @@ const TrafegoPage = () => {
             </CardContent>
           </Card>
 
-          <Card className="relative h-full md:h-[80vh]">
+          <Card className="relative h-full md:h-full">
             <CardContent>
               <div className="flex mb-5 h-56 items-center justify-center">
                 <Image
@@ -138,8 +138,8 @@ const TrafegoPage = () => {
                 />
               </div>
 
-              <div className="flex flex-col mt-9">
-                <h1 className="truncate text-xl mb-5 font-bold">TikTok Ads.</h1>
+              <div className="flex flex-col">
+                <h1 className="truncate text-xl mb-3 font-bold">TikTok Ads.</h1>
 
                 <div>
                   <p className="flex flex-row gap-2 items-center overflow-hidden text-ellipsis whitespace-nowrap">

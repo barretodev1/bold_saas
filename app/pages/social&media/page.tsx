@@ -33,13 +33,13 @@ const MarketingPage = () => {
                 />
               </div>
 
-              <div className="flex flex-col mt-1">
-                <h1 className="truncate text-xl mb-5 font-bold">
+              <div className="flex flex-col">
+                <h1 className="truncate text-xl mb-3 font-bold">
                   Plano BÁSICO.
                 </h1>
 
                 <div>
-                  <p className="flex flex-row gap-2   items-center ">
+                  <p className="flex flex-row gap-2 items-center ">
                     <CircleCheckBigIcon className="text-green-600" size={17} />
                     Gestão no Instagram
                   </p>
@@ -67,7 +67,7 @@ const MarketingPage = () => {
               </div>
 
               <div className="flex mt-14">
-                <a href="">
+                <a href="https://form.jotform.com/243265663048662">
                   <Button className="flex w-44 mt-6 bottom-0 mb-4 absolute bg-violet-600">
                     Quero lucrar!
                   </Button>
@@ -88,8 +88,8 @@ const MarketingPage = () => {
                 />
               </div>
 
-              <div className="flex flex-col mt-1">
-                <h1 className="truncate text-xl mb-5 font-bold">
+              <div className="flex flex-col">
+                <h1 className="truncate text-xl mb-3 font-bold">
                   Plano PLENO.
                 </h1>
 
@@ -122,7 +122,7 @@ const MarketingPage = () => {
               </div>
 
               <div className="flex mt-14">
-                <a href="">
+                <a href="https://form.jotform.com/243265663048662">
                   <Button className="flex w-44 mt-6 bottom-0 mb-4 absolute bg-violet-600">
                     Quero lucrar!
                   </Button>
@@ -143,8 +143,8 @@ const MarketingPage = () => {
                 />
               </div>
 
-              <div className="flex flex-col mt-1">
-                <h1 className="truncate text-xl mb-5 font-bold">
+              <div className="flex flex-col">
+                <h1 className="truncate text-xl mb-3 font-bold">
                   Plano PREMIUM.
                 </h1>
 
@@ -177,7 +177,7 @@ const MarketingPage = () => {
               </div>
 
               <div className="flex mt-14">
-                <a href="">
+                <a href="https://form.jotform.com/243265663048662">
                   <Button className="flex w-44 mt-6 bottom-0 mb-4 absolute bg-violet-600">
                     Quero lucrar!
                   </Button>

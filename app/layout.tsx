@@ -1,6 +1,5 @@
 import { Mulish } from "next/font/google";
 import "./globals.css";
-import Logo from "./favicon.ico"
 import Head from "next/head";
 
 const melish = Mulish({

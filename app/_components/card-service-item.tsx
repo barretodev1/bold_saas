@@ -6,8 +6,15 @@ import "../../app/globals.css";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+import { useEffect } from "react";
 
 const ComponentService = () => {
+  useEffect(() => {
+    AOS.init(); // Inicializa o AOS
+  }, []);
+
   const [isLoading, setIsLoading] = useState(false); // Estado de carregamento
   const router = useRouter();
 
@@ -47,7 +54,7 @@ const ComponentService = () => {
       )}
 
       {/* Cards */}
-      <Card className="relative h-full md:h-[70vh]">
+      <Card data-aos="fade-up" className="relative h-full md:h-[70vh]">
         <CardContent>
           <div className="mb-5 h-56 items-center justify-center">
             <Image
@@ -78,7 +85,7 @@ const ComponentService = () => {
 
       {/* Adicione o mesmo padrão para os outros cards */}
       {/* Exemplo de outro card */}
-      <Card className="relative h-full md:h-[70vh]">
+      <Card data-aos="fade-up" className="relative h-full md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-5 flex justify-center">
             <Image
@@ -109,7 +116,7 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card className="relative h-full md:h-[70vh]">
+      <Card data-aos="fade-up" className="relative h-full md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-5 flex justify-center">
             <Image
@@ -142,7 +149,7 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card className="relative h-full md:h-[70vh]">
+      <Card data-aos="fade-up" className="relative h-full md:h-[70vh]">
         <CardContent>
           <div className="mb-5 h-56 items-center justify-center">
             <Image
@@ -175,7 +182,7 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card className="relative h-full md:h-[70vh]">
+      <Card data-aos="fade-up" className="relative h-full md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-1 flex justify-center mt-4">
             <Image
@@ -217,7 +224,7 @@ const ComponentService = () => {
         </CardContent>
       </Card>
 
-      <Card className="relative h-full md:h-[70vh]">
+      <Card data-aos="fade-up" className="relative h-full md:h-[70vh]">
         <CardContent>
           <div className="top-0 mb-5 flex justify-center h-56">
             <Image

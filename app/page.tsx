@@ -8,10 +8,17 @@ import ComponentService from "./_components/card-service-item";
 import SmoothScrollLinks from "../app/_components/scroll";
 import ComponentFooter from "./_components/footer";
 import { ArrowUpIcon } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 import { Card, CardContent } from "./_components/ui/card";
 import CookieBanner from "./_components/cookies";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init(); // Inicializa o AOS
+  }, []);
+
   return (
     <div>
       <SmoothScrollLinks />
@@ -78,13 +85,12 @@ export default function Home() {
       {/* COMPONENT ABOUT CELL*/}
       <div
         className="flex flex-col items-center p-8 justify-center"
-        id="sobre"
-      >
-        <div className="h-[360px] mt-16">
+        id="sobre">
+        <div data-aos="fade-up" className="h-[360px] mt-16">
           <Image src="/about.png" alt="sobre nós" height={330} width={330} />
         </div>
 
-        <div className="flex items-center justify-center gap-9 flex-col md:flex-row">
+        <div data-aos="fade-up" className="flex items-center justify-center gap-9 flex-col md:flex-row">
           {/* CARD MISSAO */}
           <Card className="relative h-full w-[360px]">
             <CardContent>

@@ -215,7 +215,7 @@ const ComponentService = () => {
             </div>
             <div className="">
               <a href="https://w.app/boldcompany">
-                <Button className="w-20 bottom-0 mb-4 absolute right-0 mr-5 md:mr-5">
+                <Button className="w-20 bottom-0 mb-4 bg-black absolute right-0 mr-5 md:mr-5">
                   Grátis!
                 </Button>
               </a>

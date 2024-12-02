@@ -60,7 +60,7 @@ export default function Home() {
             </span>
           </h2>
           <a href="https://wa.me/11933255476">
-            <Button className="mt-5 w-60 h-10">Lucrar agora!</Button>
+            <Button className="mt-5 w-60 bg-black h-10">Lucrar agora!</Button>
           </a>
         </div>
 
@@ -76,7 +76,7 @@ export default function Home() {
             </span>
           </h2>
           <a href="https://wa.me/11933255476">
-            <Button className="mt-3 w-60 h-10">Lucrar agora!</Button>
+            <Button className="mt-3 w-60 h-10 bg-black">Lucrar agora!</Button>
           </a>
         </div>
       </main>

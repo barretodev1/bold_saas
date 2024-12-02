@@ -56,12 +56,12 @@ export default function HeaderComponent() {
       </header>
 
       {/* Header para celular */}
-      <header className="bg-zinc-300 border-b w-full p-4">
-      <nav className="relative">
+      <header className="flex items-center bg-zinc-300 p-4 inline md:hidden">
+      <nav className="flex items-center justify-center relative">
         {/* Botão para abrir o menu */}
         <button
           onClick={toggleMenu}
-          className="p-2 border rounded bg-gray-700 text-white"
+          className="p-2 border rounded flex items-center justify-center bg-gray-700 text-white"
           aria-expanded={isOpen}
           aria-controls="nav-menu"
           aria-label="Toggle navigation"

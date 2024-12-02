@@ -1,6 +1,5 @@
 import {
   InstagramIcon,
-  MailIcon,
   MessageCircleIcon,
 } from "lucide-react";
 import { Card } from "./ui/card";

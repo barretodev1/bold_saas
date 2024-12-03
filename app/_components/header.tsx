@@ -46,6 +46,14 @@ export default function HeaderComponent() {
               Contato
             </a>
           </li>
+          <li>
+            <a
+              className="text-black font-semibold hover:text-violet-600 transition-all"
+              href="#cases"
+            >
+              Cases
+            </a>
+          </li>
           <a
             className="flex justify-center cursor-pointer rounded-full bg-violet-600 p-2 w-36 font-normal text-white hover:bg-violet-500 transition-all"
             href="#lucrar"

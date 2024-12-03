@@ -244,7 +244,7 @@ export default function Home() {
       </div>
 
       {/* COMPONENT CASES */}
-      <div className="flex flex-col p-8 items-center justify-center">
+      <div id="cases" className="flex flex-col p-8 items-center justify-center">
         <div data-aos="fade-up">
           <Image src="/cases.png" alt="cases" height={370} width={370} />
         </div>

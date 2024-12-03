@@ -9,11 +9,10 @@ import SmoothScrollLinks from "../app/_components/scroll";
 import ComponentFooter from "./_components/footer";
 import { ArrowUpIcon } from "lucide-react";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 import { Card, CardContent } from "./_components/ui/card";
 import CookieBanner from "./_components/cookies";
 import { useEffect } from "react";
-
 
 export default function Home() {
   useEffect(() => {
@@ -39,7 +38,7 @@ export default function Home() {
       </div>
 
       {/* COMPONENT MAIN */}
-      <main className="flex items-center justify-evenly mt-12 flex-col p-5 xl:flex-row">
+      <main className="flex items-center justify-evenly flex-col p-5 xl:flex-row">
         <Image
           src="/MainMarket.svg"
           alt="imagem principal"
@@ -61,7 +60,9 @@ export default function Home() {
             </span>
           </h2>
           <a href="https://wa.me/11933255476">
-            <Button className="mt-5 w-60 bg-black h-10">Lucrar agora!</Button>
+            <Button className="mt-3 w-60 bg-black hover: bg-zinc-700 h-10">
+              Lucrar agora!
+            </Button>
           </a>
         </div>
 
@@ -82,21 +83,21 @@ export default function Home() {
         </div>
       </main>
 
-    
       {/* COMPONENT ABOUT CELL*/}
-      <div
-        className="flex flex-col items-center p-8 justify-center"
-        id="sobre">
+      <div className="flex flex-col items-center p-8 justify-center" id="sobre">
         <div data-aos="fade-up" className="h-[360px] mt-16">
           <Image src="/about.png" alt="sobre nós" height={330} width={330} />
         </div>
 
-        <div data-aos="fade-up" className="flex items-center justify-center gap-9 flex-col md:flex-row">
+        <div
+          data-aos="fade-up"
+          className="flex items-center justify-center gap-9 flex-col md:flex-row"
+        >
           {/* CARD MISSAO */}
           <Card className="relative h-full w-[360px]">
             <CardContent>
               <div className="flex flex-col mt-9">
-                <h1 className=" flex items-center justify-center text-xl mb-5 font-bold">
+                <h1 className=" flex items-center justify-center text-xl mb-2 font-bold">
                   MISSÃO
                 </h1>
 
@@ -140,7 +141,7 @@ export default function Home() {
           <Card className="relative h-full w-[360px]">
             <CardContent>
               <div className="flex flex-col mt-9">
-                <h1 className=" flex items-center justify-center text-xl mb-5 font-bold">
+                <h1 className=" flex items-center justify-center text-xl mb-2 font-bold">
                   VISÃO
                 </h1>
 
@@ -184,7 +185,7 @@ export default function Home() {
           <Card className="relative h-full w-[360px]">
             <CardContent>
               <div className="flex flex-col mt-9">
-                <h1 className=" flex items-center justify-center text-xl mb-5 font-bold">
+                <h1 className=" flex items-center justify-center text-xl mb-2 font-bold">
                   VALORES
                 </h1>
 
@@ -242,9 +243,55 @@ export default function Home() {
         </div>
       </div>
 
+      {/* COMPONENT CASES */}
+      <div className="flex flex-col p-8 items-center justify-center">
+        <div data-aos="fade-up">
+          <Image src="/cases.png" alt="cases" height={370} width={370} />
+        </div>
+
+        <div
+          data-aos="fade-up"
+          className="flex  flex-col gap-5 mt-10 md:flex-row"
+        >
+          {/* Primeiro Card */}
+          <Card
+            className="flex relative h-[60vh] w-[85vw] md:w-[30vw] bg-cover bg-center shadow-inner-bottom"
+            style={{ backgroundImage: "url('/case-rarity.png')" }}
+          >
+            <CardContent>
+              <div className="flex flex-col absolute mb-6 ml-2 bottom-0">
+                <h1 className="text-white font-bold">Rarity.</h1>
+                <p className="text-sm font-normal text-zinc-300 mb-3 mt-1">
+                  Fizemos o trabalho de Landing Page <br></br>responsiva, ultilizando
+                  técnicas de SEO<br></br>para ranqueamento orgânico.
+                </p>
+                <Button className="flex w-44 bg-white text-black">Saiba mais</Button>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Segundo Card */}
+          <Card
+            className="flex flex-col relative h-[60vh] w-[85vw] md:w-[30vw] bg-cover bg-center shadow-inner-bottom"
+            style={{ backgroundImage: "url('/case-uhn.png')" }}
+          >
+            <CardContent>
+              <div className="flex flex-col absolute mb-6 ml-2 bottom-0">
+                <h1 className="text-white font-bold">UHN Store.</h1>
+                <p className="text-sm font-normal text-zinc-300 mb-3 mt-1">
+                  Fizemos um trabalho de Tráfego Pago,<br></br>ultilizando
+                  um serviço da Meta e<br></br> Google ADS, triplicando seus resultados.
+                </p>
+                <Button className="flex w-44 bg-white text-black">Saiba mais</Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+
       {/* COMPONENT CONTACT US */}
       <div
-        className="flex flex-col items-center justify-center p-5 pt-16"
+        className="flex flex-col items-center justify-center p-8 pt-24"
         id="contato"
       >
         <div>

@@ -27,7 +27,7 @@ const ComponentService = () => {
   };
 
   return (
-    <div className="flex justify-center items-center grid grid-cols-1 gap-7 md:grid-cols-3">
+    <div className="flex justify-center items-center grid grid-cols-1 gap-7 md:grid-cols-3  ">
       {/* Spinner Global */}
       {isLoading && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">

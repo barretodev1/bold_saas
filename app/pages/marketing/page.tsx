@@ -1,3 +1,4 @@
+import Header2 from "@/app/_components/header2";
 import { Button } from "@/app/_components/ui/button";
 import { Card, CardContent } from "@/app/_components/ui/card";
 import { CircleCheckBigIcon } from "lucide-react";
@@ -6,16 +7,7 @@ import Image from "next/image";
 const MarketingPage = () => {
   return (
     <>
-    <header
-        className="flex bg-zinc-300 border-b border items-center w-full p-4 items-center justify-center"
-        id="home"
-      >
-        <div>
-          <a href="https://boldcompany.netlify.app/">
-            <Image src="/logo.webp" alt="logo" width={150} height={150} />
-          </a>
-        </div>
-    </header>
+    <Header2/>
 
     <div className="p-8 flex justify-center items-center" id="lucrar">
       <div className="flex justify-center items-center ">

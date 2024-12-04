@@ -13,8 +13,14 @@ import "aos/dist/aos.css";
 import { Card, CardContent } from "./_components/ui/card";
 import CookieBanner from "./_components/cookies";
 import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter()
+  const navigateWithLoading = (route: string) => {
+      router.push(route); 
+    }; 
+
   useEffect(() => {
     AOS.init(); // Inicializa o AOS
   }, []);
@@ -283,7 +289,7 @@ export default function Home() {
                   Fizemos um trabalho de Tráfego Pago,<br></br>ultilizando
                   um serviço da Meta e<br></br> Google ADS, triplicando seus resultados.
                 </p>
-                <Button className="flex w-44 bg-white text-black">Saiba mais</Button>
+                <Button onClick={() => navigateWithLoading("/pages/saiba-mais/uhn-store")} className="flex w-44 bg-white text-black">Saiba mais</Button>
               </div>
             </CardContent>
           </Card>

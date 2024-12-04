@@ -87,7 +87,7 @@ const RarityPage = () => {
           <h1 className="relative left-0 w-full flex font-extrabold text-white text-xl ml-[3%] md:ml-[11%]">
             UHN Store
           </h1>
-          <h2 className="relative left-0 mb-3 text-base font-normal text-white ml-[3%] md:ml-[11%]">
+          <h2 className="relative left-0 mb-1 text-base font-normal text-white ml-[3%] md:ml-[11%]">
             Loja de Roupa
           </h2>
           <a

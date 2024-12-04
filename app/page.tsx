@@ -271,7 +271,7 @@ export default function Home() {
                   Fizemos o trabalho de Landing Page <br></br>responsiva, ultilizando
                   técnicas de SEO<br></br>para ranqueamento orgânico.
                 </p>
-                <Button className="flex w-44 bg-white text-black">Saiba mais</Button>
+                <Button onClick={() => navigateWithLoading("/pages/saiba-mais/rarity")} className="flex w-44 bg-white text-black">Saiba mais</Button>
               </div>
             </CardContent>
           </Card>

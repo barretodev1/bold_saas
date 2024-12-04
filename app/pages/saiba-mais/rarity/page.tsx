@@ -1,7 +1,7 @@
 "use client";
 
 import Header2 from "@/app/_components/header2";
-import "../uhn-store/uhn.css";
+import "../rarity/rarity.css";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -40,7 +40,7 @@ const RarityPage = () => {
               <BreadcrumbSeparator />
               <BreadcrumbItem>
                 <BreadcrumbPage className="text-zinc-400">
-                  UHN Store
+                  Rarity
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -49,24 +49,24 @@ const RarityPage = () => {
 
         <div className="absolute px-4 flex flex-col mt-10 left-0 w-full hidden md:block">
           <h1 className="w-full flex font-bold text-white text-xl ml-[3%] md:ml-[11%] mt-16">
-            UHN Store: Tráfego Pago
+            Rarity: Website
           </h1>
           <h2 className="relative mb-20 left-0 text-sm' font-normal text-white mt-1 ml-[3%] md:ml-[11%]">
-          O mercado de moda fitness é altamente competitivo<br></br> no
-            Google. Para a UHN, a Bold Company utilizou<br></br> tráfego pago e
-            otimização de palavras-chave<br></br> genéricas para aumentar o
-            tráfego e guiar os usuários<br></br> em todas as etapas da jornada
-            de compra.
+            O mercado tecnológico é altamente competitivo<br></br> no mercado.
+            Para a Rarity, a Bold Company realizou<br></br>um website e
+            otimização para ranqueamento (SEO)<br></br>e aumentar o tráfego
+            orgânicamente e guiar os usuários<br></br> em todas as etapas da
+            jornada de compra.
           </h2>
           <h1 className="relative left-0 w-full flex font-extrabold text-white text-xl ml-[3%] md:ml-[11%]">
-            UHN Store
+            Rarity
           </h1>
           <h2 className="relative left-0 mb-3 text-base font-normal text-white ml-[3%] md:ml-[11%]">
-            Loja de Roupa
+            Startup de tecnologia
           </h2>
           <a
             data-aos="fade-right"
-            href="https://shopee.com.br/uhnstore?entryPoint=ShopBySearch&searchKeyword=uhn%20store"
+            href="https://raritytech.netlify.app/"
             className="bg-violet-600 mt-3 p-2 w-40 items-center justify-center rounded-full relative flex left-0 text-base font-semibold hover:bg-violet-950 transition-all text-white mt-1 ml-[3%] md:ml-[11%]"
           >
             Conferir
@@ -75,24 +75,23 @@ const RarityPage = () => {
 
         <div className="absolute px-4 flex flex-col mt-4 left-0 w-full block md:hidden">
           <h1 className="w-full flex font-bold text-white text-xl ml-[3%] md:ml-[11%]">
-            UHN Store: Tráfego Pago
+            Rarity: Tráfego Pago
           </h1>
           <h2 className="relative mb-4 left-0 text-sm' font-normal text-white mt-1 ml-[3%] md:ml-[11%]">
-            O mercado de moda fitness é altamente competitivo no
-            Google. Para a UHN, a Bold Company utilizou tráfego pago e
-            otimização de palavras-chave genéricas para aumentar o
-            tráfego e guiar os usuários em todas as etapas da jornada
-            de compra.
+            O mercado tecnológico é altamente competitivo no mercado. Para a
+            Rarity, a Bold Company realizou um website e otimização para
+            ranqueamento (SEO) e aumentar o tráfego orgânicamente e guiar os
+            usuários em todas as etapas da jornada de compra.
           </h2>
           <h1 className="relative left-0 w-full flex font-extrabold text-white text-xl ml-[3%] md:ml-[11%]">
-            UHN Store
+            Rarity
           </h1>
           <h2 className="relative left-0 mb-2 text-base font-normal text-white ml-[3%] md:ml-[11%]">
             Loja de Roupa
           </h2>
           <a
             data-aos="fade-right"
-            href="https://shopee.com.br/uhnstore?entryPoint=ShopBySearch&searchKeyword=uhn%20store"
+            href="https://raritytech.netlify.app/"
             className="bg-violet-600 mt-1 p-2 w-40 items-center justify-center rounded-full relative flex left-0 text-base font-semibold hover:bg-violet-950 transition-all text-white mt-1 ml-[3%] md:ml-[11%]"
           >
             Conferir
@@ -109,20 +108,17 @@ const RarityPage = () => {
           >
             <h1 className="w-full flex text-3xl font-bold text-black">Caso</h1>
             <p className="text-sm font-normal text-zinc-600 mt-1 hidden md:block">
-              A UHN Store começou a ser contruída em 2022 e em 2023 ficou
-              pronta! Porém, sem vendas,<br></br> com pouco engajamento e
-              estacionada, procurou por ajuda, quando nós, da Bold Company,
-              <br></br> fizemos um trabalho de tráfego pago muito bem
-              estruturado, fazendo com que as vendas e<br></br> o engajamento da
-              UHN, triplicassem...
+              A Rarity começou apenas com um Instagram em 2023, e começou a
+              perder vendas e<br></br> captação de leads, pois não tinham uma
+              forma de contatar lead, nem mesmo mostrar<br></br> o seu
+              profissionalismo, até que criamos um website para a Rarity, e
+              resolvemos o seu<br></br> problema...
             </p>
             <p className="text-sm font-normal text-zinc-600 mt-1 block md:hidden">
-              A UHN Store começou a ser construída em 2022 e em 2023{" "}
-              ficou pronta! Porém, sem vendas, com pouco engajamento e{" "}
-              estacionada, procurou por ajuda, quando nós, da Bold Company,
-               fizemos um trabalho de tráfego pago muito bem
-              estruturado, fazendo com que as vendas e o engajamento da
-              UHN, triplicassem...
+              A Rarity começou apenas com um Instagram em 2023, e começou a
+              perder vendas e captação de leads, pois não tinham uma forma de
+              contatar lead, nem mesmo mostrar o seu profissionalismo, até que
+              criamos um website para a Rarity, e resolvemos o seu problema...
             </p>
           </div>
 
@@ -135,20 +131,19 @@ const RarityPage = () => {
               Solução
             </h1>
             <p className="text-sm font-normal text-zinc-600 mt-1 hidden md:inline">
-              Ao contratar a Bold Company, desenvolvemos uma estratégia de
-              tráfego pago altamente<br></br> segmentada. Essa estratégia
-              incluiu: Campanhas no Google Ads, Anúncios no Instagram e<br></br>{" "}
-              Facebook e Remarketing Inteligente para impactar visitantes que
-              acessaram o site, mas não<br></br> concluíram a compra, mostrando
-              anúncios personalizados.
+              Ao contratar a Bold Company, desenvolvemos um software/website,
+              onde otimizamos<br></br> a sua produção e captação de leads.
+              Realizamos uma landing page, (Página única),<br></br> onde o
+              cliente pagou um valor abaixo da média do mercado, e começou a
+              competir com<br></br> os médios/grandes do mercado da tecnologia,
+              redes e infraestrutura.
             </p>
             <p className="text-sm font-normal text-zinc-600 mt-1 inline md:hidden">
-              Ao contratar a Bold Company, desenvolvemos uma estratégia{" "}
-              de tráfego pago altamente segmentada. Essa estratégia incluiu:
-              Campanhas no Google Ads, Anúncios no Instagram e Facebook{" "}
-              e Remarketing Inteligente para impactar visitantes que acessaram
-               o site, mas não concluíram a compra, mostrando alguns
-              anúncios personalizados.
+              Ao contratar a Bold Company, desenvolvemos um software/website,
+              onde otimizamos a sua produção e captação de leads. Realizamos uma
+              landing page, (Página única), onde o cliente pagou um valor abaixo
+              da média do mercado, e começou a competir com os médios/grandes do
+              mercado da tecnologia, redes e infraestrutura.
             </p>
           </div>
 
@@ -167,29 +162,30 @@ const RarityPage = () => {
                 <p className="flex text-base font-normal text-zinc-600 flex-row gap-2 items-center">
                   <CircleCheckBigIcon className="text-green-600" size={17} />
                   <span>
-                    Tráfego no Site: Crescimento de 400%, com visitantes
-                    qualificados que realmente se interessavam pelos produtos.
+                    Tráfego na Startup: Crescimento de 230%, com clientes
+                    diretos que realmente buscavam os serviços prestados pela
+                    Rarity.
                   </span>
                 </p>
                 <p className="flex text-base font-normal text-zinc-600 flex-row gap-2 items-center">
                   <CircleCheckBigIcon className="text-green-600" size={17} />
                   <span>
-                    Taxa de Conversão: Aumento de 3% para 8%, resultado da
-                    segmentação assertiva e remarketing.
+                    Taxa de Conversão: Aumento de 10% para 19%, resultado da
+                    captação de leads, através do website.
                   </span>
                 </p>
                 <p className="flex text-base font-normal text-zinc-600 flex-row gap-2 items-center">
                   <CircleCheckBigIcon className="text-green-600" size={17} />
                   <span>
-                    Faturamento Mensal: Triplicou, ultrapassando R$ 100 mil em
-                    vendas recorrentes.
+                    Faturamento Mensal: Quadruplicou, ultrapassando R$ 48 mil em
+                    vendas.
                   </span>
                 </p>
                 <p className="flex text-base font-normal text-zinc-600 flex-row gap-2 items-center">
                   <CircleCheckBigIcon className="text-green-600" size={17} />
                   <span>
                     Redução do Custo por Conversão: O custo caiu pela metade
-                    devido à otimização das campanhas e públicos-alvo.
+                    devido à otimização de leads através do próprio site.
                   </span>
                 </p>
               </div>
@@ -198,17 +194,15 @@ const RarityPage = () => {
               <div className="block md:hidden">
                 <p className="flex text-base font-normal text-zinc-600 flex-row gap-2 items-center">
                   <CircleCheckBigIcon className="text-green-600" size={17} />
-                  <span>Tráfego no Site: Crescimento de 400%</span>
+                  <span>Tráfego no Startup: Crescimento de 230%</span>
                 </p>
                 <p className="flex text-base font-normal text-zinc-600 flex-row gap-2 items-center">
                   <CircleCheckBigIcon className="text-green-600" size={17} />
-                  <span>Taxa de Conversão: Aumento de 8%</span>
+                  <span>Taxa de Conversão: Aumento de 19%</span>
                 </p>
                 <p className="flex text-base font-normal text-zinc-600 flex-row gap-2 items-center">
                   <CircleCheckBigIcon className="text-green-600" size={17} />
-                  <span>
-                    Faturamento Mensal: Triplicou.
-                  </span>
+                  <span>Faturamento Mensal: Quadruplicou.</span>
                 </p>
                 <p className="flex text-base font-normal text-zinc-600 flex-row gap-2 items-center">
                   <CircleCheckBigIcon className="text-green-600" size={17} />

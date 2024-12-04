@@ -10,10 +10,10 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/app/_components/ui/breadcrumb";
-import { useRouter } from "next/navigation";
 import ComponentFooter from "@/app/_components/footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 import { CircleCheckBigIcon } from "lucide-react";
 
 const RarityPage = () => {

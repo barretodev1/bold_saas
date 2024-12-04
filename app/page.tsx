@@ -250,11 +250,11 @@ export default function Home() {
         </div>
 
         <div
-          data-aos="fade-up"
           className="flex  flex-col gap-5 mt-10 md:flex-row"
         >
           {/* Primeiro Card */}
           <Card
+            data-aos="fade-right"
             className="flex relative h-[60vh] w-[85vw] md:w-[30vw] bg-cover bg-center shadow-inner-bottom"
             style={{ backgroundImage: "url('/case-rarity.png')" }}
           >
@@ -272,6 +272,7 @@ export default function Home() {
 
           {/* Segundo Card */}
           <Card
+            data-aos="fade-left"
             className="flex flex-col relative h-[60vh] w-[85vw] md:w-[30vw] bg-cover bg-center shadow-inner-bottom"
             style={{ backgroundImage: "url('/case-uhn.png')" }}
           >

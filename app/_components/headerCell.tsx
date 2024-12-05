@@ -10,7 +10,6 @@ export default function HeaderCell() {
   const [areContactOpen, setAreContactOpen] = React.useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
-  const toggleServices = () => setAreServicesOpen(!areServicesOpen);
 
   return (
     <>
@@ -64,37 +63,37 @@ export default function HeaderCell() {
               >
                 <a
                   href="https://boldcompany.netlify.app/pages/website"
-                  className="block font-bold text-sm py-2 px-4 hover:bg-gray-700"
+                  className="block text-sm font-normal text-zinc-400 py-2 px-4 hover:bg-gray-700"
                 >
                   WebSite
                 </a>
                 <a
                   href="https://boldcompany.netlify.app/pages/campanha"
-                  className="block font-bold text-sm py-2 px-4 hover:bg-gray-700"
+                  className="block text-sm font-normal text-zinc-400 font-bold text-sm py-2 px-4 hover:bg-gray-700"
                 >
                   Campanha
                 </a>
                 <a
                   href="https://boldcompany.netlify.app/pages/design"
-                  className="block font-bold text-sm py-2 px-4 hover:bg-gray-700"
+                  className="block text-sm font-normal text-zinc-400 font-bold text-sm py-2 px-4 hover:bg-gray-700"
                 >
                   Design
                 </a>
                 <a
                   href="https://boldcompany.netlify.app/pages/social&media"
-                  className="block font-bold text-sm py-2 px-4 hover:bg-gray-700"
+                  className="block text-sm font-normal text-zinc-400 font-bold text-sm py-2 px-4 hover:bg-gray-700"
                 >
                   Social Media
                 </a>
                 <a
                   href="https://boldcompany.netlify.app/pages/marketing"
-                  className="block font-bold text-sm py-2 px-4 hover:bg-gray-700"
+                  className="block text-sm font-normal text-zinc-400 font-bold text-sm py-2 px-4 hover:bg-gray-700"
                 >
                   Marketing
                 </a>
                 <a
                   href="https://boldcompany.netlify.app/pages/copywriting"
-                  className="block font-bold text-sm py-2 px-4 hover:bg-gray-700"
+                  className="block text-sm font-normal text-zinc-400 font-bold text-sm py-2 px-4 hover:bg-gray-700"
                 >
                   Copy
                 </a>
@@ -124,13 +123,13 @@ export default function HeaderCell() {
               >
                 <a
                   href="https://boldcompany.netlify.app/pages/saiba-mais/rarity"
-                  className="block font-bold text-sm py-2 px-4 hover:bg-gray-700"
+                  className="block text-sm font-normal text-zinc-400 font-bold text-sm py-2 px-4 hover:bg-gray-700"
                 >
                   Rarity
                 </a>
                 <a
                   href="https://boldcompany.netlify.app/pages/saiba-mais/uhn-store"
-                  className="block font-bold text-sm py-2 px-4 hover:bg-gray-700"
+                  className="block text-sm font-normal text-zinc-400 font-bold text-sm py-2 px-4 hover:bg-gray-700"
                 >
                   UHN Store
                 </a>
@@ -160,13 +159,13 @@ export default function HeaderCell() {
               >
                 <a
                   href="https://www.instagram.com/oboldcompany"
-                  className="block font-bold text-sm text-sm py-2 px-4 hover:bg-gray-700"
+                  className="block text-sm font-normal text-zinc-400 font-bold text-sm text-sm py-2 px-4 hover:bg-gray-700"
                 >
                   Instagram
                 </a>
                 <a
                   href="https://wa.me/11933255476"
-                  className="block font-bold text-sm text-sm py-2 px-4 hover:bg-gray-700"
+                  className="block text-sm font-normal text-zinc-400 font-bold text-sm text-sm py-2 px-4 hover:bg-gray-700"
                 >
                   WhatsApp
                 </a>

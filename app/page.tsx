@@ -256,43 +256,50 @@ export default function Home() {
         </div>
 
         <div
-          className="flex  flex-col gap-5 mt-10 md:flex-row"
+          className="flex  flex-col gap-5 mt-10 md:flex-col"
         >
-          {/* Primeiro Card */}
-          <Card
-            data-aos="fade-right"
-            className="flex relative h-[60vh] w-[85vw] md:w-[30vw] bg-cover bg-center shadow-inner-bottom"
-            style={{ backgroundImage: "url('/case-rarity.png')" }}
-          >
-            <CardContent>
-              <div className="flex flex-col absolute mb-6 ml-2 bottom-0">
-                <h1 className="text-white font-bold">Rarity.</h1>
-                <p className="text-sm font-normal text-zinc-300 mb-3 mt-1">
-                  Fizemos o trabalho de Landing Page <br></br>responsiva, ultilizando
-                  técnicas de SEO<br></br>para ranqueamento orgânico.
-                </p>
-                <Button onClick={() => navigateWithLoading("/pages/saiba-mais/rarity")} className="flex w-44 text-black bg-white hover:bg-slate-500">Saiba mais</Button>
-              </div>
-            </CardContent>
-          </Card>
+      
+          <div className="flex flex-col md:flex-row gap-4 mb-4">
+            {/* Primeiro Card */}
+            <Card
+              data-aos="fade-right"
+              className="flex relative h-[60vh] w-[85vw] md:w-[30vw] bg-cover bg-center shadow-inner-bottom"
+              style={{ backgroundImage: "url('/case-rarity.png')" }}
+            >
+              <CardContent>
+                <div className="flex flex-col absolute mb-6 ml-2 bottom-0">
+                  <h1 className="text-white font-bold">Rarity.</h1>
+                  <p className="text-sm font-normal text-zinc-300 mb-3 mt-1">
+                    Fizemos o trabalho de Landing Page <br></br>responsiva, ultilizando
+                    técnicas de SEO<br></br>para ranqueamento orgânico.
+                  </p>
+                  <Button onClick={() => navigateWithLoading("/pages/cases/rarity")} className="flex w-44 text-black bg-white hover:bg-slate-500">Saiba mais</Button>
+                </div>
+              </CardContent>
+            </Card>
 
-          {/* Segundo Card */}
-          <Card
-            data-aos="fade-left"
-            className="flex flex-col relative h-[60vh] w-[85vw] md:w-[30vw] bg-cover bg-center shadow-inner-bottom"
-            style={{ backgroundImage: "url('/case-uhn.png')" }}
-          >
-            <CardContent>
-              <div className="flex flex-col absolute mb-6 ml-2 bottom-0">
-                <h1 className="text-white font-bold">UHN Store.</h1>
-                <p className="text-sm font-normal text-zinc-300 mb-3 mt-1">
-                  Fizemos um trabalho de Tráfego Pago,<br></br>ultilizando
-                  um serviço da Meta e<br></br> Google ADS, triplicando seus resultados.
-                </p>
-                <Button onClick={() => navigateWithLoading("/pages/saiba-mais/uhn-store")} className="flex w-44 bg-white text-black">Saiba mais</Button>
-              </div>
-            </CardContent>
-          </Card>
+            {/* Segundo Card */}
+            <Card
+              data-aos="fade-left"
+              className="flex flex-col relative h-[60vh] w-[85vw] md:w-[30vw] bg-cover bg-center shadow-inner-bottom"
+              style={{ backgroundImage: "url('/case-uhn.png')" }}
+            >
+              <CardContent>
+                <div className="flex flex-col absolute mb-6 ml-2 bottom-0">
+                  <h1 className="text-white font-bold">UHN Store.</h1>
+                  <p className="text-sm font-normal text-zinc-300 mb-3 mt-1">
+                    Fizemos um trabalho de Tráfego Pago,<br></br>ultilizando
+                    um serviço da Meta e<br></br> Google ADS, triplicando seus resultados.
+                  </p>
+                  <Button onClick={() => navigateWithLoading("/pages/cases/uhn-store")} className="flex w-44 bg-white text-black">Saiba mais</Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+    
+          <div className="flex items-center justify-center">
+            <Button onClick={() => navigateWithLoading("/pages/cases")} className="bg-black">Ver mais</Button>
+          </div>
         </div>
       </div>
 

@@ -20,7 +20,7 @@ export default function HeaderComponent() {
         id="home"
       >
         <div>
-          <Image src="/logo.webp" alt="logo" width={150} height={150} />
+          <Image src="/logo.webp" alt="logo bold" width={150} height={150} />
         </div>
 
         <ul className="gap-4 flex flex-row items-center mr-2 font-semibold">

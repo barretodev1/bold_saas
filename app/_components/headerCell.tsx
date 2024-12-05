@@ -35,10 +35,14 @@ export default function HeaderCell() {
           >
             <button
               onClick={toggleMenu}
-              className="px-5 py-2 rounded-full m-4 bg-gray-600"
+              className="px-5 py-2 rounded-3xl m-4 bg-gray-600 hover:bg-gray-700 transition-all"
             >
               Fechar
             </button>
+
+            <a href="https://boldcompany.netlify.app" className="block text-base font-normal text-zinc-400 py-2 px-4 hover:bg-gray-700">
+              Home
+            </a>
 
             {/* Dropdown de Serviços */}
             <div className="relative">

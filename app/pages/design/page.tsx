@@ -1,13 +1,43 @@
-import Header2 from "@/app/_components/header2";
 import { Button } from "@/app/_components/ui/button";
 import { Card, CardContent } from "@/app/_components/ui/card";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/app/_components/ui/breadcrumb";
 import { CircleCheckBigIcon, CircleMinusIcon } from "lucide-react";
 import Image from "next/image";
+import HeaderCell from "@/app/_components/headerCell";
+import ComponentFooter from "@/app/_components/footer";
 
 const DesignPage = () => {
   return (
     <>
-      <Header2/>
+      <HeaderCell />
+
+      <div className="flex mt-8 px-24 w-full hidden md:block">
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink
+                className="text-black font-bold"
+                href="https://boldcompany.netlify.app"
+              >
+                Home
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage className="text-zinc-700 font-bold">
+                Design
+              </BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+      </div>
 
       <div className="p-8 flex justify-center items-center" id="lucrar">
         <div className="flex justify-center items-center grid grid-cols-1 gap-7 md:grid-cols-3 flex justify-center items-center">
@@ -53,25 +83,25 @@ const DesignPage = () => {
                     </span>
                   </p>
                   <p className="flex flex-row gap-2 items-center   text-decoration: line-through text-zinc-500">
-                  <CircleMinusIcon className="text-zinc-500" size={17} />
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
                       Otimização de Elementos Visuais
                     </span>
                   </p>
                   <p className="flex flex-row gap-2 items-center   text-decoration: line-through text-zinc-500">
-                  <CircleMinusIcon className="text-zinc-500" size={17} />
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
                       Análise e Ajuste de Materiais Visuais
                     </span>
                   </p>
                   <p className="flex flex-row gap-2 items-center   text-decoration: line-through text-zinc-500">
-                  <CircleMinusIcon className="text-zinc-500" size={17} />
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
                       Mentoria Exclusiva
                     </span>
                   </p>
                   <p className="flex flex-row gap-2 items-center   text-decoration: line-through text-zinc-500">
-                  <CircleMinusIcon className="text-zinc-500" size={17} />
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
                       Ajuste de Materiais Visuais - 1 ano
                     </span>
@@ -149,13 +179,13 @@ const DesignPage = () => {
                     </span>
                   </p>
                   <p className="flex flex-row gap-2 items-center   text-decoration: line-through text-zinc-500">
-                  <CircleMinusIcon className="text-zinc-500" size={17} />
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
                       Mentoria Exclusiva
                     </span>
                   </p>
                   <p className="flex flex-row gap-2 items-center   text-decoration: line-through text-zinc-500">
-                  <CircleMinusIcon className="text-zinc-500" size={17} />
+                    <CircleMinusIcon className="text-zinc-500" size={17} />
                     <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap">
                       Ajuste de Materiais Visuais - 1 ano
                     </span>
@@ -264,6 +294,8 @@ const DesignPage = () => {
           </Card>
         </div>
       </div>
+
+      <ComponentFooter/>
     </>
   );
 };

@@ -56,7 +56,7 @@ const ComponentService = () => {
       {/* Cards */}
       <Card data-aos="fade-up" className="relative h-full md:h-full">
         <CardContent>
-          <div className="mb-5 h-56 items-center justify-center">
+          <div className="mb-4 h-56 mr-6 flex items-center justify-center">
             <Image
               className="mt-[-15px]"
               src="/website.png"
@@ -149,7 +149,7 @@ const ComponentService = () => {
 
       <Card data-aos="fade-up" className="relative h-full md:h-full">
         <CardContent>
-          <div className="mb-5 h-56 items-center justify-center">
+          <div className="mb-5 h-56 flex items-center justify-center">
             <Image
               className="mt-[-15px]"
               src="/social.png"
@@ -177,11 +177,11 @@ const ComponentService = () => {
 
       <Card data-aos="fade-up" className="relative h-full md:h-full">
         <CardContent>
-          <div className="top-0 mb-4 flex justify-center">
+          <div className="top-0 mb-4 flex justify-center items-center">
             <Image
               src="/consult.png"
               alt="Consultoria de Marketing"
-              className="h-56"
+              className="h-56 mt-7"
               width={200}
               height={400}
             />

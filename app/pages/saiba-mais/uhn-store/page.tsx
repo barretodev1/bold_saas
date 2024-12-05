@@ -1,6 +1,5 @@
 "use client";
 
-import Header2 from "@/app/_components/header2";
 import "../uhn-store/uhn.css";
 import {
   Breadcrumb,
@@ -15,6 +14,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { CircleCheckBigIcon } from "lucide-react";
+import HeaderCell from "@/app/_components/headerCell";
 
 const RarityPage = () => {
   useEffect(() => {
@@ -23,7 +23,7 @@ const RarityPage = () => {
 
   return (
     <>
-      <Header2 />
+      <HeaderCell/>
 
       <div className="principal  relative flex flex-col items-center w-full justify-center overflow-hidden">
         <div className="flex px-4 ml-[3%] mt-6 absolute top-0 left-0 md:ml-[11%]">

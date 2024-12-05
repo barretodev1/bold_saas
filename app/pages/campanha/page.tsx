@@ -1,4 +1,6 @@
-import Header2 from "@/app/_components/header2";
+import ComponentFooter from "@/app/_components/footer";
+import HeaderCell from "@/app/_components/headerCell";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/app/_components/ui/breadcrumb";
 import { Button } from "@/app/_components/ui/button";
 import { Card, CardContent } from "@/app/_components/ui/card";
 import { CircleCheckBigIcon } from "lucide-react";
@@ -7,7 +9,28 @@ import Image from "next/image";
 const TrafegoPage = () => {
   return (
     <>
-      <Header2/>
+      <HeaderCell/>
+
+      <div className="flex mt-8 px-10  hidden md:block">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink
+                  className="text-black font-bold"
+                  href="https://boldcompany.netlify.app"
+                >
+                  Home
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage className="text-zinc-700 font-bold">
+                  Campanha
+                </BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
 
       <div className="p-8" id="lucrar">
         <div className="flex justify-center items-center grid grid-cols-1 gap-7 md:grid-cols-3 flex justify-center items-center">
@@ -172,6 +195,8 @@ const TrafegoPage = () => {
           </Card>
         </div>
       </div>
+
+      <ComponentFooter/>
     </>
   );
 };

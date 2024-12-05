@@ -1,4 +1,13 @@
-import Header2 from "@/app/_components/header2";
+import ComponentFooter from "@/app/_components/footer";
+import HeaderCell from "@/app/_components/headerCell";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/app/_components/ui/breadcrumb";
 import { Button } from "@/app/_components/ui/button";
 import { Card, CardContent } from "@/app/_components/ui/card";
 import { CircleCheckBigIcon, CircleMinusIcon } from "lucide-react";
@@ -7,14 +16,35 @@ import Image from "next/image";
 const WebSitePage = () => {
   return (
     <>
-      <Header2/>
+      <HeaderCell />
+
+      <div className="flex mt-8 px-10  hidden md:block">
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink
+                className="text-black font-bold"
+                href="https://boldcompany.netlify.app"
+              >
+                Home
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage className="text-zinc-700 font-bold">
+                Website
+              </BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+      </div>
 
       <div className="p-8 mt-1" id="lucrar">
         <div className="flex justify-center items-center grid grid-cols-1 gap-7 md:grid-cols-3 flex justify-center items-center">
           <Card className="relative h-full md:h-full">
             <CardContent>
-            <div className="top-0 flex justify-center">
-            <Image
+              <div className="top-0 flex justify-center">
+                <Image
                   className="mt-[-15px]"
                   src="/website.png"
                   alt="landing page"
@@ -80,15 +110,13 @@ const WebSitePage = () => {
                 </div>
               </div>
 
-            
-            <div className="flex mt-14">
-              <a href="https://form.jotform.com/243247402781051">
-                <Button className="flex w-44 mt-6 bottom-0 mb-4 absolute bg-violet-600">
-                  Quero lucrar!
-                </Button>
-              </a>
-            </div>
-            
+              <div className="flex mt-14">
+                <a href="https://form.jotform.com/243247402781051">
+                  <Button className="flex w-44 mt-6 bottom-0 mb-4 absolute bg-violet-600">
+                    Quero lucrar!
+                  </Button>
+                </a>
+              </div>
             </CardContent>
           </Card>
 
@@ -161,15 +189,13 @@ const WebSitePage = () => {
                 </div>
               </div>
 
-                         
-            <div className="flex mt-14">
-              <a href="https://form.jotform.com/243247402781051">
-              <Button className="flex w-44 mt-6 bottom-0 mb-4 absolute bg-violet-600">
-                Quero lucrar!
-              </Button>
-              </a>
-            
-            </div>
+              <div className="flex mt-14">
+                <a href="https://form.jotform.com/243247402781051">
+                  <Button className="flex w-44 mt-6 bottom-0 mb-4 absolute bg-violet-600">
+                    Quero lucrar!
+                  </Button>
+                </a>
+              </div>
             </CardContent>
           </Card>
 
@@ -253,6 +279,8 @@ const WebSitePage = () => {
           </Card>
         </div>
       </div>
+
+      <ComponentFooter/>
     </>
   );
 };

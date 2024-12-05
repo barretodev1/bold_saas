@@ -1,17 +1,47 @@
-"use client"
+"use client";
 
-import Header2 from "@/app/_components/header2";
 import { Button } from "@/app/_components/ui/button";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/app/_components/ui/breadcrumb";
 import { Card, CardContent } from "@/app/_components/ui/card";
 import { CircleCheckBigIcon } from "lucide-react";
 import Image from "next/image";
+import HeaderCell from "@/app/_components/headerCell";
+import ComponentFooter from "@/app/_components/footer";
 
 const MarketingPage = () => {
   return (
     <>
-    <Header2/>
-    
-    <div className="p-8 mt-1" id="lucrar">
+      <HeaderCell />
+
+      <div className="flex mt-8 px-10  hidden md:block">
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink
+                className="text-black font-bold"
+                href="https://boldcompany.netlify.app"
+              >
+                Home
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage className="text-zinc-700 font-bold">
+                Social Media
+              </BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+      </div>
+
+      <div className="p-8 mt-1" id="lucrar">
         <div className="flex justify-center items-center grid grid-cols-1 gap-7 md:grid-cols-3 flex justify-center items-center">
           <Card className="relative h-full md:h-full">
             <CardContent>
@@ -178,7 +208,9 @@ const MarketingPage = () => {
             </CardContent>
           </Card>
         </div>
-    </div>
+      </div>
+
+      <ComponentFooter/>
     </>
   );
 };

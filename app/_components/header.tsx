@@ -186,6 +186,18 @@ export default function HeaderComponent() {
                 >
                   UHN Store
                 </a>
+                <a
+                  href="https://boldcompany.netlify.app/pages/cases/fsw-barber"
+                  className="block text-sm font-normal text-zinc-400 font-bold text-sm py-2 px-4 hover:bg-gray-700"
+                >
+                  FSW Barber
+                </a>
+                <a
+                  href="https://boldcompany.netlify.app/pages/cases/hub-food"
+                  className="block text-sm font-normal text-zinc-400 font-bold text-sm py-2 px-4 hover:bg-gray-700"
+                >
+                  Hub Food!
+                </a>
               </div>
             </div>
 

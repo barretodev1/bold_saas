@@ -96,12 +96,11 @@ const RarityPage = () => {
             Rarity
           </h1>
           <h2 className="relative left-0 mb-2 text-base font-normal text-white ml-[3%] md:ml-[11%]">
-            Loja de Roupa
+            Start-up de Tecnologia
           </h2>
           <a
-            data-aos="fade-right"
             href="https://raritytech.netlify.app/"
-            className="bg-violet-600 mt-1 p-2 w-40 items-center justify-center rounded-full relative flex left-0 text-base font-semibold hover:bg-violet-950 transition-all text-white mt-1 ml-[3%] md:ml-[11%]"
+            className="bg-white text-black mt-4 p-2 w-40 items-center justify-center rounded-full relative flex left-0 text-base font-semibold transition-all mt-4 ml-[3%] md:ml-[11%] bg-white"
           >
             Conferir
           </a>

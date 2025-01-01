@@ -75,9 +75,8 @@ const RarityPage = () => {
             Loja de Roupa
           </h2>
           <a
-            data-aos="fade-right"
             href="https://shopee.com.br/uhnstore?entryPoint=ShopBySearch&searchKeyword=uhn%20store"
-            className="bg-violet-600 mt-3 p-2 w-40 items-center justify-center rounded-full relative flex left-0 text-base font-semibold hover:bg-violet-950 transition-all text-white mt-1 ml-[3%] md:ml-[11%]"
+            className="bg-white mt-3 p-2 w-40 items-center justify-center rounded-full relative flex left-0 text-base font-semibold hover:bg-zinc-300 transition-all text-black mt-4 ml-[3%] md:ml-[11%]"
           >
             Conferir
           </a>
